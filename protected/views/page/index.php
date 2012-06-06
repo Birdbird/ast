@@ -44,7 +44,7 @@
 <div class="row">
 <div class="span8">
   <div class="widget widget-theme widget2">
-		<h3>学会动态<span class="more-only"><a href="#">更多>></a></span></h3>
+		<h3>学会动态<span class="more-only"><a href="<?php echo $this->createUrl('xuehui/index') ?>">更多>></a></span></h3>
 		<div class="span4 one-pic">
 			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/1.jpg" alt="test image 1"/></a><cite><a href="#">全省地方科协科普工作会议在苏州召开</a></cite>
 		</div>

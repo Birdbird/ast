@@ -3,7 +3,7 @@ class HotList extends CWidget
 {
 	public $hotNews;
 	public $topNews;
-	public $length=18;
+	public $length=14;
 
 	public function init()
 	{

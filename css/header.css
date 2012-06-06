@@ -1,0 +1,51 @@
+#header {
+	margin-top:10px;
+	padding:0;
+	height:278px;
+	background:none;
+	margin-bottom:25px;
+}
+
+#header .images {
+	height:278px;
+	width:640px;
+/*	position:absolute;
+	right:0;
+	top:0;*/
+}
+
+#header img {
+	display:block;
+	float:left;
+	max-width: auto;
+}
+
+#header h1 {
+	height:278px;
+	float:left;
+	width:295px;
+	border-right:5px solid #13253b;
+	background:url(../img/logo.jpg);
+	-webkit-border-radius: 10px 0;
+  -moz-border-radius: 10px 0;
+  border-radius: 10px 0;
+	text-indent:-9999px;
+}
+
+#main-nav {
+	top:250px;
+	border:1px solid #C6DAED;
+}
+
+#header .nivo-caption {
+	right:0;
+	width:300px;
+	top:50px;
+	left:auto;
+	bottom:auto;
+	font-size:22px;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=5);
+	opacity:0.5;
+	padding:10px 15px;
+}

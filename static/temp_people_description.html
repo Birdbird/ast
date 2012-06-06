@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>走进科协——海门市科学技术协会</title>
+	<meta name="keywords" content="海门市 科学技术协会 科协 ">
+	<meta name="description" content=" ">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/about.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/country.css" media="all">
+	<script type="text/javascript" src="js/accordion.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$(".accordion h3:first").addClass("active");
+		$(".accordion p:not(:first)").hide();
+
+		$(".accordion h3").click(function(){
+			$(this).next("p").slideToggle("slow")
+			.siblings("p:visible").slideUp("slow");
+			$(this).toggleClass("active");
+			$(this).siblings("h3").removeClass("active");
+		});
+
+	});
+	</script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<a id="logo"><span>海门市</span>科学技术协会</a>
+		<ul class='nav nav-pills' id='main-nav'>
+			<li class="first"><a href="index.html">首页</a></li>
+			<li class="active"><a href="about.html">走进科协</a></li>
+			<li><a href="xuehui.html">学会之窗</a></li>
+			<li><a href="news.html">工作动态</a></li>
+			<li><a href="zhengce.html">科普政策</a></li>
+			<li><a href="country.html">科普之窗</a></li>
+			<li><a href="suzhi.html">全民科学素质行动</a></li>
+			<li><a href="haizhi.html">海智计划</a></li>
+			<li><a href="kejiguan.html">数字科技馆</a></li>
+			<li><a href="#">科技者之家</a></li>
+			<li><a href="shenbian.html">身边科学</a></li>
+			<li class="last"><a href="download.html">下载中心</a></li>
+		</ul>
+	</div>
+</div>
+<div id="main" class="container">
+	<div class="row">
+		<div class="span4">
+			<div class="accordion">
+				<h3>科协党组</h3>
+				<p><span>党组书记、常务副主席：<a href="temp_people_description.html">徐耀新</a></span>
+				<span>党组成员、 副 主 席：<a href="#p01">张铁恒</a></span>
+				<span>党组成员、 纪检组长：<a href="#p02">赵勇进</a></span>
+				<span>党组成员、 副 主 席：<a href="#p03">阮仁良</a></span>
+				<span>正厅级干事：		<a href="#p04">吴国彬</a></span>
+				<span>党组成员、副主席：<a href="#">冯少东</a></span>
+				<span>党组成员、秘书长：<a href="#">汤成快</a></span>
+				<span>副厅级干事：<a href="#">刘福在</a></span></p>
+				
+				<h3>组织机构</h3>
+				<p>
+					<span>主 席：<a href="#">欧阳平凯</a></span>
+					<span>副主席：<a href="#">徐耀新</a><a href="#">施正荣</a><a href="#">戎嘉余</a><a href="#">刘志红
+							</a><a href="#">祝世宁</a><a href="#">尤肖虎</a></span>
+					<span class="organization"><a href="#">常委会委员</a></span><span  class="organization"><a href="#">全委会委员</a></span>
+					<span  class="organization"><a href="#">工作委员会</a></span><span  class="organization"><a href="#">机关部门</a></span>
+					<span  class="organization"><a href="#">直属单位</a></span>
+				</p>
+				
+				<h3>历届主席</h3>
+				<p>
+					<span><a href="#">谢克西</a><a href="#">张仲良</a><a href="#">华诚一</a><a href="#">钱钟韩</a><a href="#">杨廷宝</a><a href="#">冯 端</a><a href="#">孙钟秀</a><a href="#">曲钦岳</a><a href="#">顾冠群</a><a href="#">欧阳平凯</a></span>
+				</p>
+			</div>
+		</div>
+		<div class="span8">
+			<div class="widget round people-list">
+				<img src="image/about01.jpg" alt="test image"/>
+				<span class="texts"><span class="name">徐耀新</span></br>1959年生，江苏海门人，中共党员，中国科协七届常委，省第十一次党代会代表，省十届人大代表，省十一届人大常委，博士，教授。1982年参加工作。历任南京师范大学政教系世界政治经济与国际共运教研室主任、南京师范大学经济法政学院政治系主任、南京市委宣传部副部长、南京市文化局局长、党委书记、南京市秦淮区区长、区委副书记，2004年12月起任江苏省科协党组书记、常务副主席。</span>
+			</div>		
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="top-pattern"></div>
+	<div class="width-container">
+		<div class="width">
+			<ul class="links">
+				<li>
+					<h2>友情链接</h2>
+					<a href="http://www.cast.org.cn/">中国科学技术协会</a></br>
+					<a href="http://www.jskx.org.cn/">江苏省科学技术协会</a></br>
+					<a href="http://www.ntkx.com/">南通市科学技术协会</a></br>
+				</li>
+				<li>
+					<h2>主办：海门市科学技术协会</h2><p>地址:海门市解放东路公园巷48号&#12288;邮编:226000</p><p>电话:0513-2212485&#12288;E-Mail: jshm828@sina.com </p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?php
+$this->widget('ext.nivoslider.ENivoSlider',array(
+	'images'=>array(
+		array('src'=>Yii::app()->baseUrl.'/image/hb1.jpg'),
+		array('src'=>Yii::app()->baseUrl.'/image/hb2.jpg'),
+	),
+	'htmlOptions'=>array('class'=>'images'),
+	'config'=>array(
+		'directionNav'=>false,
+		'effect'=>'fold',
+		'controlNav'=>false,
+		'pauseOnHover'=>false
+	)
+));
+?>

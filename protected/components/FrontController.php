@@ -12,8 +12,8 @@ class FrontController extends CController
 		Yii::app()->clientScript->registerCoreScript('jquery');
 		$cilentScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.carouFredSel-5.6.0-packed.js',
 			CClientScript::POS_END);
-		$cilentScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.cycle.all.js',CClientScript::POS_END);
-		$cilentScript->registerScript('flytext',"$('#fly-text').cycle({fx: 'all' });");
+		$cilentScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.cycle.lite.js',CClientScript::POS_END);
+		$cilentScript->registerScript('flytext',"$('#fly-text').cycle({fx: 'fade' });");
 	}
 	
 	protected function addSlider($options=array('controlNav'=>false))

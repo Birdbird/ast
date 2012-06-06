@@ -139,3 +139,11 @@
 .widget .hot-click li {
 	margin-right:12px;
 }
+
+#header .images {
+	width:637px;
+}
+
+#main-nav li a {
+	padding:10px 3px;
+}

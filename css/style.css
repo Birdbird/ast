@@ -1307,6 +1307,7 @@ border: 0;
 }
 .sub li {
   list-style:none;
+	display:block;
   text-align:center;
   line-height:25px;
 }
@@ -1365,6 +1366,7 @@ font-size:22px;
 	height:200px;
 	color:#5cabcc;
 	white-space:nowrap;
+	background:none;
 }
 
 .content-list ul.yiiPager li a {

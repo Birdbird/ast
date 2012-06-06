@@ -12,9 +12,9 @@ class SiteMenu {
 			array('label'=>'走进科协', 'url'=>array('/page/about')),
 			array('label'=>'政策法规', 'url'=>array('/page/news')),
 			array('label'=>'工作动态', 'url'=>array('/page/news')),
-			array('label'=>'学会之窗', 'url'=>array('/page/xuehui'),'items'=>array(
-				array('label'=>'学会动态', 'url'=>array('/page/xuehui')),
-				array('label'=>'学会介绍', 'url'=>array('/page/xuehui')),
+			array('label'=>'学会之窗', 'url'=>array('/xuehui/index'),'items'=>array(
+				array('label'=>'学会动态', 'url'=>array('/xuehui/index')),
+				array('label'=>'学会介绍', 'url'=>array('/xuehui/index')),
 			)),
 			array('label'=>'科普之窗', 'url'=>'','items'=>array(
 				array('label'=>'科普惠农', 'url'=>array('/huinong/index')),

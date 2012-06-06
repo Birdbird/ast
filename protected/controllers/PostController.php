@@ -21,7 +21,7 @@ class PostController extends FrontController
 		));
 		$count=Post::model()->count($criteria);
 		$pagination=new CPagination($count);
-		$pagination->pageSize=10;
+		$pagination->pageSize=20;
 		$pagination->applyLimit($criteria);
 		$news = Post::model()->findAll($criteria);
 		$this->render('category',array(

@@ -14,15 +14,7 @@
 	<div class="widget widget-notice">
 		<h3>要闻快递</h3>
 		<ul>
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-			<li><a href="#">苏州制定实施《市级科普经费专项资金</a></li>
-			<li><a href="#">锡城青少年机器人竞赛创意十足</a></li>
-			<li><a href="#">南通市科协“三解三促”农资帮扶活动</a></li>
-			<li><a href="#">南通市科协向院士“借脑” 强势推动经</a></li>
-			<li><a href="#">海州区各乡镇街道制定下发《全民科学素...</a></li>
-			<li><a href="#">泰州市委办、市政府办联合印发《泰州市...</a></li>
-			<li><a href="#">扬州市科协深入开展领导干部“三解三促</a></li>
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
+			<?php $this->widget('NewsList',array('categoryID'=>90,'lines'=>9,'length'=>20)) ?>
 		</ul>
 	</div>
 </div>
@@ -71,29 +63,19 @@
   <div class="widget widget-theme widget2">
 		<h3>学会动态<span class="more-only"><a href="#">更多>></a></span></h3>
 		<div class="span4 one-pic">
-			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/1.jpg" alt="test image 1"/></a><cite><a href="#">图1测试测试</a></cite>
+			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/1.jpg" alt="test image 1"/></a><cite><a href="#">全省地方科协科普工作会议在苏州召开</a></cite>
 		</div>
 		<div class="span4 widget-content">
-    	<ul>
-				<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-				<li><a href="#">苏州制定实施《市级科普经费专项资金</a></li>
-				<li><a href="#">锡城青少年机器人竞赛创意十足</a></li>
-				<li><a href="#">南通市科协“三解三促”农资帮扶活动</a></li>
-				<li><a href="#">南通市科协向院士“借脑” 强势推动经</a></li>
-				<li><a href="#">海州区各乡镇街道制定下发《全民科学素...</a></li>
-				<li><a href="#">泰州市委办、市政府办联合印发《泰州市...</a></li>
-				<li><a href="#">扬州市科协深入开展领导干部“三解三促</a></li>
-				<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-			</ul>
+    		<?php $this->widget('XuehuiList',array('lines'=>9,'length'=>20)) ?>
 		</div>
 	</div>
   <div class="widget widget-theme widget2">
 		<h3>科普之窗<span class="more-only"><a href="#">更多>></a></span></h3>
 		<div class="span4 one-pic">
-			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic01.jpg" alt="test image 1"/></a><cite><a href="#">图1测试测试</a></cite>
+			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic01.jpg" alt="image 1"/></a><cite><a href="#">全省地方科协科普工作会议在苏州召开</a></cite>
 		</div>
 		<div class="span4 widget-content">
-    <?php $this->widget('IndexList',array('categoryIDs'=>array(65,66),'lines'=>9,'length'=>20)) ?>
+    	<?php $this->widget('IndexList',array('categoryIDs'=>array(65,66),'lines'=>9,'length'=>20)) ?>
 		</div>
 	</div>
 </div>
@@ -132,17 +114,20 @@
 					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
 				</div>
 				</li>
+				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/t05.jpg" alt="test image"/>
+				<div class="pic-detatil">
+					<h3><a href="#">家庭节能小常识</a></h3>
+					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
+				</div>
+				</li>
+				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/t01.jpg" alt="test image"/>
+				<div class="pic-detatil">
+					<h3><a href="#">生活小常识</a></h3>
+					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
+				</div>
+				</li>
 			</ul>
 		</div>
-		<ul>
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-			<li><a href="#">苏州制定实施《市级科普经费专项资金</a></li>
-			<li><a href="#">锡城青少年机器人竞赛创意十足</a></li>
-			<li><a href="#">南通市科协“三解三促”农资帮扶活动</a></li>
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-			<li><a href="#">苏州制定实施《市级科普经费专项资金</a></li>
-			<li><a href="#">锡城青少年机器人竞赛创意十足</a></li>
-		</ul>
 	</div>
 </div>
 </div>
@@ -153,10 +138,10 @@
 		<div class="span2">
 			<ul class="images">
 				<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic01.jpg" alt="test image 1"/></a>
-					<cite><a href="#">图1测试测试</a></cite>
+					<cite><a href="#">李源潮“七个要”促进...</a></cite>
 				</li>
 				<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic02.jpg" alt="test image 2"/></a>
-					<cite><a href="#">This is a test image 2</a></cite>
+					<cite><a href="#">“海智计划”对接会引...</a></cite>
 				</li>
 			</ul>
 		</div>

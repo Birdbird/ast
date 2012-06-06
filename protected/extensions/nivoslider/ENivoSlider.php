@@ -75,7 +75,7 @@ class ENivoSlider extends CWidget
 				$item['imageOptions']['title']=$item['caption'];
 			}
 			if (isset($item['url'])) {
-				echo CHtml::link(CHtml::image($item['src'], $item['caption'], $item['imageOptions']), $item['url'], $item['linkOptions'])."\n";
+				echo CHtml::link(CHtml::image($item['src'], isset($item['caption'])?$item['caption']:'', $item['imageOptions']), $item['url'], isset($item['imageOptions'])?$item['imageOptions']:'')."\n";
 			} else {
 				echo CHtml::image($item['src'], isset($item['caption'])?$item['caption']:'', isset($item['imageOptions'])?$item['imageOptions']:'')."\n";
 			}

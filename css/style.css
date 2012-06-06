@@ -1372,3 +1372,20 @@ font-size:22px;
 .content-list ul.yiiPager li a {
 	background-image: none;
 }
+.one-pic .nivo-caption {
+  background:white;
+  color:#005580;
+  padding:0;
+  opacity: 1.0;
+  -moz-opacity: 1.0;
+  filter: alpha(opacity=10);
+}
+.one-pic .nivoSlider {
+  height:204px;
+  overflow: hidden;
+}
+.one-pic .nivoSlider img {
+  width: 288px;
+  height: 196px;
+  margin: 0;
+}

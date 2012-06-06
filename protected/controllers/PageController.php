@@ -15,12 +15,15 @@ EOD;
 		$this->render('index');
 	}
 	
-	public function actionAbout()
+	public function actionAbout($id=6)
 	{
 		$cilentScript = Yii::app()->clientScript;
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/about.css');
 		$cilentScript->registerScriptFile(Yii::app()->baseUrl.'/js/accordion.js',CClientScript::POS_END);
-		$this->render('about');
+		$content = Organization::model()->findByPk($id);
+		if($content===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		$this->render('about',array('content'=>$content));
 	}
 	
 	public function actionXuehui()

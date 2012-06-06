@@ -6,7 +6,12 @@
   margin-bottom:10px;
 }
 .xuehui-left ul {
-	margin-left:40px;
+	/*margin-left:40px;*/
+}
+.xuehui-left ul  li {
+	width:99px;
+	height:40px;
+	float: left;
 }
 .widget ul li a {
 	font-size:12px;
@@ -29,4 +34,22 @@
 }
 .list-foot {
 	text-align:center;
+}
+.xuehui-left span a {
+	width:100px;
+	height:25px;
+
+}
+.artical,.intro {
+	min-height:500px;
+}
+.intro h3 {
+	background-color:#CCC;
+	font-size:20px;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.intro-detail {
+	line-height:22px;
 }

@@ -13,38 +13,13 @@
 <div class="span4">
 	<div class="widget widget-notice">
 		<h3>要闻快递</h3>
-		<ul>
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-			<li><a href="#">苏州制定实施《市级科普经费专项资金</a></li>
-			<li><a href="#">锡城青少年机器人竞赛创意十足</a></li>
-			<li><a href="#">南通市科协“三解三促”农资帮扶活动</a></li>
-			<li><a href="#">南通市科协向院士“借脑” 强势推动经</a></li>
-			<li><a href="#">海州区各乡镇街道制定下发《全民科学素...</a></li>
-			<li><a href="#">泰州市委办、市政府办联合印发《泰州市...</a></li>
-			<li><a href="#">扬州市科协深入开展领导干部“三解三促</a></li>
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-		</ul>
+			<?php $this->widget('NewsList',array('categoryID'=>90,'lines'=>9,'length'=>20)) ?>
 	</div>
 </div>
 <div class="span4">
 	<div class="widget widget-notice">
 		<h3>最新公告</h3>
-		<ul id="scoll-notice">
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-			<li><a href="#">苏州制定实施《市级科普经费专项资金</a></li>
-			<li><a href="#">锡城青少年机器人竞赛创意十足</a></li>
-			<li><a href="#">南通市科协“三解三促”农资帮扶活动</a></li>
-			<li><a href="#">南通市科协向院士“借脑” 强势推动经</a></li>
-			<li><a href="#">海州区各乡镇街道制定下发《全民科学素...</a></li>
-			<li><a href="#">泰州市委办、市政府办联合印发《泰州市...</a></li>
-			<li><a href="#">扬州市科协深入开展领导干部“三解三促</a></li>
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-			<li><a href="#">南通市科协向院士“借脑” 强势推动经</a></li>
-			<li><a href="#">海州区各乡镇街道制定下发《全民科学素...</a></li>
-			<li><a href="#">泰州市委办、市政府办联合印发《泰州市...</a></li>
-			<li><a href="#">扬州市科协深入开展领导干部“三解三促</a></li>
-			<li><a href="#">全省地方科协科普工作会议在苏州召开</a></li>
-		</ul>
+		<?php $this->widget('NewsList',array('categoryID'=>91,'lines'=>14,'length'=>20)) ?>
 	</div>
 </div>
 </div>
@@ -69,7 +44,7 @@
 <div class="row">
 <div class="span8">
   <div class="widget widget-theme widget2">
-		<h3>学会动态<span class="more-only"><a href="#">更多>></a></span></h3>
+		<h3>学会动态<span class="more-only"><a href="<?php echo $this->createUrl('xuehui/index') ?>">更多>></a></span></h3>
 		<div class="span4 one-pic">
 			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/1.jpg" alt="test image 1"/></a><cite><a href="#">全省地方科协科普工作会议在苏州召开</a></cite>
 		</div>
@@ -78,7 +53,7 @@
 		</div>
 	</div>
   <div class="widget widget-theme widget2">
-		<h3>科普之窗<span class="more-only"><a href="#">更多>></a></span></h3>
+		<h3>科普之窗</h3>
 		<div class="span4 one-pic">
 			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic01.jpg" alt="image 1"/></a><cite><a href="#">全省地方科协科普工作会议在苏州召开</a></cite>
 		</div>
@@ -154,18 +129,7 @@
 			</ul>
 		</div>
 		<div class="span4 widget3 ">
-			<ul>
-				<li><a href="#">李源潮“七个要”促进重大人才工程“落地生根”</a></li>
-				<li><a href="#">中国启动最高级别人才计划 吸引海归回国效力</a></li>
-				<li><a href="#">“海智计划”对接会引来近百“海归”</a></li>
-				<li><a href="#">第一批“外专千人计划”申报工作开始启动</a></li>
-				<li><a href="#">2011年海外赤子为藏服务行动计划启动</a></li>
-				<li><a href="#">2011苏州国际精英创业周7月10日隆重开幕</a></li>
-				<li><a href="#">科协八大代表建言高层次创新人才培养</a></li>
-				<li><a href="#">中国科学院引进海外高层次人才管理实施细则</a></li>
-				<li><a href="#">科协八大代表建言高层次创新人才培养</a></li>
-				<li><a href="#">中国科学院引进海外高层次人才管理实施细则</a></li>
-			</ul>
+			<?php $this->widget('IndexList',array('categoryIDs'=>array(43),'lines'=>9,'length'=>20)) ?>
 		</div>
 	</div>
 </div>

@@ -1,5 +1,5 @@
 <?php
-class XuehuiList extends NewsList {
+class XuehuiList extends XueHuiNewsList {
 	public $categoryIDs;
 	
 	public function init()

@@ -1370,3 +1370,17 @@ font-size:22px;
 .content-list ul.yiiPager li a {
 	background-image: none;
 }
+.one-pic .nivo-caption {
+  position: static;
+  background:none;
+  color:#005580;
+  padding:0;
+}
+.one-pic .nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 288px;
+  height: 196px;
+  margin: 5px;
+}

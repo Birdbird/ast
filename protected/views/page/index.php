@@ -46,7 +46,13 @@
   <div class="widget widget-theme widget2">
 		<h3>学会动态<span class="more-only"><a href="<?php echo $this->createUrl('xuehui/index') ?>">更多>></a></span></h3>
 		<div class="span4 one-pic">
-			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/1.jpg" alt="test image 1"/></a><cite><a href="#">全省地方科协科普工作会议在苏州召开</a></cite>
+				<?php
+				$this->widget('SlideShow',array(
+					'slideID'=>6,
+					'id'=>'slideshow2',
+					// 'htmlOptions'=>array('class'=>'theme-default'),
+				));
+				?>
 		</div>
 		<div class="span4 widget-content">
     		<?php $this->widget('XuehuiList',array('lines'=>9,'length'=>20)) ?>
@@ -55,7 +61,13 @@
   <div class="widget widget-theme widget2">
 		<h3>科普之窗</h3>
 		<div class="span4 one-pic">
-			<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic01.jpg" alt="image 1"/></a><cite><a href="#">全省地方科协科普工作会议在苏州召开</a></cite>
+			<?php
+			$this->widget('SlideShow',array(
+				'slideID'=>7,
+				'id'=>'slideshow3',
+				// 'htmlOptions'=>array('class'=>'theme-default'),
+			));
+			?>
 		</div>
 		<div class="span4 widget-content">
     	<?php $this->widget('IndexList',array('categoryIDs'=>array(65,66),'lines'=>9,'length'=>20)) ?>

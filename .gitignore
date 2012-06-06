@@ -7,8 +7,8 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-config.php
-index.php
+config/main.php
+/index.php
 
 /assets
 runtime

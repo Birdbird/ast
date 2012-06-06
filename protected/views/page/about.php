@@ -25,4 +25,5 @@
 	<div class="widget round text-description">
 		<h2 class="round"><?php echo $content->name ?></h2>
 		<p><?php echo nl2br($content->intro) ?></p>
+	</div>
 </div>

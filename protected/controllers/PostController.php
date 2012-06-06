@@ -14,12 +14,19 @@ class PostController extends FrontController
 	public function actionCategory($id)
 	{
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/news.css');
-		$news = Post::model()->findAll(array(
+		$criteria = new CDbCriteria(array(
 			'condition'=>'category_id=:category_id',
 			'params'=>array(':category_id'=>$id),
-			'limit'=>20,
 			'order'=>'id desc',
 		));
-		$this->render('category',array('news'=>$news));
+		$count=Post::model()->count($criteria);
+		$pagination=new CPagination($count);
+		$pagination->pageSize=10;
+		$pagination->applyLimit($criteria);
+		$news = Post::model()->findAll($criteria);
+		$this->render('category',array(
+			'news'=>$news,
+			'pagination'=>$pagination,
+		));
 	}
 }

@@ -1366,3 +1366,7 @@ font-size:22px;
 	color:#5cabcc;
 	white-space:nowrap;
 }
+
+.content-list ul.yiiPager li a {
+	background-image: none;
+}

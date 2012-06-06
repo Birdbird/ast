@@ -28,10 +28,14 @@
 		<ul>
 			<?php foreach ($news as $newsItem): ?>
 			<li>
-				<?php echo CHtml::link($newsItem->title,array('post/view','id'=>$newsItem->id)) ?>
+				<?php echo CHtml::link(mb_substr($newsItem->title,0,40),array('post/view','id'=>$newsItem->id)) ?>
 				<span class="news-time"><?php echo date('Y-m-d',$newsItem->create_time)?></span>
 			</li>
 			<?php endforeach ?>
 		</ul>
+		<?php $this->widget('CLinkPager', array(
+				'header'=>'',
+		    'pages' => $pagination,
+		)) ?>
 	</div>
 </div>

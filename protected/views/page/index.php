@@ -30,14 +30,14 @@
 	</ul> 
 </div>
 <div>
-<a href="suzhi.html"><img src="<?php echo Yii::app()->baseUrl ?>/image/suzhi.png" alt="news title" class="little-titles"/></a>
+<a href="<?php echo $this->createUrl('suzhi/index') ?>"><img src="<?php echo Yii::app()->baseUrl ?>/image/suzhi.png" alt="news title" class="little-titles"/></a>
 <a href="http://www.js5461.org/"><img src="<?php echo Yii::app()->baseUrl ?>/image/qkj.png" alt="news title" class="little-titles"/></a>
-<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/spzx.png" alt="news title" class="little-titles"/></a>
-<a href="country.html"><img src="<?php echo Yii::app()->baseUrl ?>/image/kphn.png" alt="news title" class="little-titles"/></a>
-<a href="country.html"><img src="<?php echo Yii::app()->baseUrl ?>/image/kpym.png" alt="news title" class="little-titles"/></a>
-<a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/kjgz.png" alt="news title" class="little-titles"/></a>
-<a href="haizhi.html"><img src="<?php echo Yii::app()->baseUrl ?>/image/hzjh.png" alt="news title" class="little-titles"/></a>
-<a href="zhengce.html"><img src="<?php echo Yii::app()->baseUrl ?>/image/kpfg.png" alt="news title" class="little-titles"/></a>		
+<a href="<?php echo $this->createUrl('page/video') ?>"><img src="<?php echo Yii::app()->baseUrl ?>/image/spzx.png" alt="news title" class="little-titles"/></a>
+<a href="<?php echo $this->createUrl('huinong/index') ?>"><img src="<?php echo Yii::app()->baseUrl ?>/image/kphn.png" alt="news title" class="little-titles"/></a>
+<a href="<?php echo $this->createUrl('shequ/index') ?>"><img src="<?php echo Yii::app()->baseUrl ?>/image/kpym.png" alt="news title" class="little-titles"/></a>
+<a href="<?php echo $this->createUrl('page/gongzuozhe') ?>"><img src="<?php echo Yii::app()->baseUrl ?>/image/kjgz.png" alt="news title" class="little-titles"/></a>
+<a href="<?php echo $this->createUrl('haizhi/index') ?>"><img src="<?php echo Yii::app()->baseUrl ?>/image/hzjh.png" alt="news title" class="little-titles"/></a>
+<a href="<?php echo $this->createUrl('post/category',array('id'=>11)) ?>"><img src="<?php echo Yii::app()->baseUrl ?>/image/kpfg.png" alt="news title" class="little-titles"/></a>		
 </div>
 
 <div class="row">
@@ -75,7 +75,7 @@
 </div>
 <div class="span4">
 	<div class="widget widget-side" id="widget1">
-		<h3>身边科学<span class="more-only"><a href="#">更多>></a></span></h3>
+		<h3>身边科学<span class="more-only"><a href="<?php echo $this->createUrl('page/shenbian') ?>">更多>></a></span></h3>
 		<div class="right-list">
 			<ul>
 				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/c02.jpg" alt="test image"/>
@@ -128,7 +128,7 @@
 <div class="row">
 <div class="span6">
 	<div class="widget-theme widget widget2 one-pic">
-		<h3>海智计划<span class="more-only"><a href="#">更多>></a></span></h3>
+		<h3>海智计划<span class="more-only"><a href="<?php echo $this->createUrl('haizhi/index') ?>">更多>></a></span></h3>
 		<div class="span2">
 			<ul class="images">
 				<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic01.jpg" alt="test image 1"/></a>
@@ -146,7 +146,7 @@
 </div>
 <div class="span6">
 	<div class="widget widget-theme widget2">
-		<h3>数字科技馆<span class="more-only"><a href="#">更多>></a></span></h3>
+		<h3>数字科技馆<span class="more-only"><a href="<?php echo $this->createUrl('page/kejiguan') ?>">更多>></a></span></h3>
 		<div class="pic-row">
 			<div class="slide-title"><p>科普视频</p></div>
 			<div class="science-pics">

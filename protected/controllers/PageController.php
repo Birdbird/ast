@@ -98,9 +98,26 @@ EOD;
 	
 	public function actionGongzuozhe()
 	{
-		$cilentScript = Yii::app()->clientScript;
-		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/gongzuozhe.css');
-		$this->render('gongzuozhe');
+		$model = new Request;
+		if(isset($_POST['Request']))
+		{
+			$model->attributes = $_POST['Request'];
+			$model->ip = Yii::app()->request->userHostAddress;
+			if($model->save())
+				$this->refresh();
+		}
+		
+		$criteria = new CDbCriteria(array(
+			'order'=>'id desc',
+		));
+		$count=Request::model()->count($criteria);
+		$pagination=new CPagination($count);
+		$pagination->pageSize=5;
+		$pagination->applyLimit($criteria);
+		$requests = Request::model()->findAll($criteria);
+		
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/gongzuozhe.css');
+		$this->render('gongzuozhe',array('requests'=>$requests,'model'=>$model,'pagination'=>$pagination,));
 	}
 
 	public function actionArticle()

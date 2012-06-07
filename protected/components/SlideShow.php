@@ -8,6 +8,7 @@ class SlideShow extends ENivoSlider
 	public function init()
 	{
 		$slide = Slide::model()->findByPk($this->slideID);
+		if(!$slide || !count($slide->images)) return;
 		foreach ($slide->images as $image) {
 			$i = array('src'=>Yii::app()->baseUrl.'/upload/slide/'.$image->image,'caption'=>$image->title);
 			if($image->url) $i['url']=$image->url;

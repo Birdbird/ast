@@ -2,7 +2,7 @@
 
 class SiteController extends Controller
 {
-	public function $title = '';
+	public $title = '';
 	/**
 	 * Declares class-based actions.
 	 */

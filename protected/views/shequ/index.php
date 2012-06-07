@@ -2,25 +2,15 @@
 	<div class="widget round">
 		<?php $this->widget('HotList') ?>
 	</div>
-	<div class="widget round">
-		<h3>友情链接</h3>
-		<ul>
-			<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/cou_link01.gif" alt="test country links images"/></a></li>
-			<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/cou_link02.gif" alt="test country links images"/></a></li>
-			<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/cou_link03.gif" alt="test country links images"/></a></li>
-			<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/cou_link04.gif" alt="test country links images"/></a></li>
-			<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/cou_link05.gif" alt="test country links images"/></a></li>
-		</ul>					
-	</div>
 </div>
 <div class="span9">
 <div class="widget round">
-	<h3>近期要闻<span class="more-only"><?php echo CHtml::link('更多>>',array('post/category','id'=>15)) ?></span></h3>
+	<h3>近期要闻<span class="more-only"><?php echo CHtml::link('更多>>',array('post/category','id'=>67)) ?></span></h3>
 	<div class="flexslider lastnews">
 	  <?php
 	$this->widget('SlideShow',array(
-	'slideID'=>2,
-	'id'=>'slideshow5',
+	'slideID'=>8,
+	'id'=>'slideshow6',
 	// 'htmlOptions'=>array('class'=>'theme-default'),
 	));
 	?>
@@ -42,9 +32,9 @@
 </div>
 <div class="widget round controll-height">
 	<div class="news-list">
-		<h3>通知通告<span class="more-only"><?php echo CHtml::link('更多>>',array('post/category','id'=>16)) ?></span></h3>
+		<h3>通知通告<span class="more-only"><?php echo CHtml::link('更多>>',array('post/category','id'=>68)) ?></span></h3>
 		<?php $this->widget('NewsList',array(
-			'categoryID'=>'16',
+			'categoryID'=>'68',
 			'length'=>42,
 			'lines'=>7,
 			'showDate'=>true,
@@ -63,9 +53,9 @@
 </div>
 <div class="widget round controll-height">
 	<div class="news-list">
-		<h3>下载中心<span class="more-only"><?php echo CHtml::link('更多>>',array('post/category','id'=>19)) ?></span></h3>
+		<h3>下载中心<span class="more-only"><?php echo CHtml::link('更多>>',array('post/category','id'=>77)) ?></span></h3>
 		<?php $this->widget('NewsList',array(
-			'categoryID'=>'19',
+			'categoryID'=>'77',
 			'length'=>42,
 			'lines'=>7,
 			'showDate'=>true,

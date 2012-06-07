@@ -91,3 +91,6 @@
 .news-list ul .first {
 	overflow: hidden;
 }
+.content-list {
+	height:226px;
+}

@@ -54,3 +54,15 @@
 	font-weight:bold;
 	font-size:16px;
 }
+
+#advise-form label {
+display: inline-block;
+width: 60px;
+}
+#advise-form .row {
+	padding:10px 0;
+}
+#advise-form .buttons {
+	float:right;
+	padding:10px;
+}

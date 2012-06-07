@@ -14,23 +14,21 @@
 	</div>
 </div>
 <div class="span9">
-	<div class="widget round">
-		<h3>近期要闻</h3>
-		<div class="flexslider lastnews">
-		  <?php
-		$this->widget('SlideShow',array(
-		'slideID'=>2,
-		'id'=>'slideshow5',
-		// 'htmlOptions'=>array('class'=>'theme-default'),
-		));
-		?>
-		</div>
-		<div class="news-dscription">
-			<h4><?php echo CHtml::link(mb_substr($important->title, 0,25),array('post/view','id'=>$important->id)) ?></h4>
-			<?php echo mb_substr(strip_tags($important->content), 0,200) ?>
-		</div>	
+<div class="widget round">
+	<h3>近期要闻</h3>
+	<div class="flexslider lastnews">
+	  <?php
+	$this->widget('SlideShow',array(
+	'slideID'=>2,
+	'id'=>'slideshow5',
+	// 'htmlOptions'=>array('class'=>'theme-default'),
+	));
+	?>
 	</div>
-</div>
+	<div class="news-dscription">
+		<h4><?php echo CHtml::link(mb_substr($important->title, 0,25),array('post/view','id'=>$important->id)) ?></h4>
+		<?php echo mb_substr(strip_tags($important->content), 0,200) ?>
+	</div>	
 </div>
 <div class="widget round">
 	<div class="news-list">

@@ -15,7 +15,6 @@
 </div>
 <div class="span9">
 	<div class="widget round">
-		<div class="news-list">
 		<h3>近期要闻</h3>
 		<div class="flexslider lastnews">
 		  <?php

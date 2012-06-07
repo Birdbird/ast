@@ -27,7 +27,7 @@
 		</div>
 		<div class="news-dscription">
 			<h4><?php echo CHtml::link(mb_substr($important->title, 0,25),array('post/view','id'=>$important->id)) ?></h4>
-			<?php echo mb_substr($important->content, 0,1600) ?>
+			<?php echo mb_substr($important->content, 0,200) ?>
 		</div>	
 	</div>
 </div>

@@ -96,6 +96,13 @@ EOD;
 		$this->render('images');
 	}
 	
+	public function actionGongzuozhe()
+	{
+		$cilentScript = Yii::app()->clientScript;
+		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/gongzuozhe.css');
+		$this->render('gongzuozhe');
+	}
+
 	public function actionArticle()
 	{
 		$this->render('article');
@@ -137,4 +144,5 @@ EOD;
 		$script = '$(".flexslider").flexslider('.$options.');';
 		Yii::app()->clientScript->registerScript('flexslider',$script);
 	}
+
 }

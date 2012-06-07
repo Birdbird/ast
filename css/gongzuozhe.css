@@ -1,0 +1,56 @@
+.ques-answer {
+	min-height:500px;
+}
+.ques-answer .answer-content {
+	background-color:#E4F7CB;
+}
+.ques-answer .answer-content .top-content {
+	overflow: hidden;
+	border-bottom:1px solid #333;
+}
+.ques-answer .answer-content .top-content span {
+	margin-right:20px;
+	font-size:13px;
+	color:#333;
+	padding:5px;
+}
+.ques-answer .answer-content .top-content .public-time{
+	float: right;
+	margin-right:5px;
+}
+.ques-answer .answer-content .ques p {
+	margin-top:10px;
+}
+.ques-answer .answer-content .ques span {
+	font-size:14px;
+	font-weight:bold;
+	color:black;
+}
+.ques-answer .input-text {
+	padding:20px;
+}
+.ques-answer .input-text .name,.ques-answer .input-text .advice {
+	width:550px;
+	border:1px solid #333;
+	margin:5px;
+}
+.ques-answer .input-text .advice {
+	width:555px;
+}
+.ques-answer .input-text .submmit {
+	display: block;
+	float: right;
+	margin-right:80px;
+	margin-top:10px;
+}
+.link-luntan {
+	background-color:#079ED8;
+}
+.span3 .link-luntan p {
+	padding:12px;
+}
+.span3 .link-luntan p a {
+	color:white;
+	font-weight:bold;
+	font-size:16px;
+}

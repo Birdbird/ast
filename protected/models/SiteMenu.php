@@ -39,14 +39,14 @@ class SiteMenu {
 				array('label'=>'科普图吧', 'url'=>array('/page/images')),
 				array('label'=>'科普游戏', 'url'=>array('/page/game')),
 				array('label'=>'科普视频', 'url'=>array('/page/video')),
-				array('label'=>'最新公告', 'url'=>array('/page/news')),
+				array('label'=>'精品推荐', 'url'=>array('/post/category','id'=>59)),
 			)),
 			array('label'=>'身边科学', 'url'=>array('/page/shenbian'),'items'=>array(
-				array('label'=>'健康养生', 'url'=>array('/page/news')),
-				array('label'=>'电器知识', 'url'=>array('/page/news')),
-				array('label'=>'节能环保', 'url'=>array('/page/news')),
+				array('label'=>'健康养生', 'url'=>array('/post/category','id'=>58)),
+				array('label'=>'电器知识', 'url'=>array('/post/category','id'=>60)),
+				array('label'=>'节能环保', 'url'=>array('/post/category','id'=>61)),
 			)),
-			array('label'=>'下载中心', 'url'=>array('/page/download')),
+			array('label'=>'下载中心', 'url'=>array('/post/category','id'=>63)),
 		),
 		//科普惠农
 		array(

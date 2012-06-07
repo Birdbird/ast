@@ -19,19 +19,12 @@
 					<li><a href="#">山西省晋中市祁县喜迎科普...</a></li>
 				</ul>
 			</div>
-			<div class="widget round">
+			<div class="widget round news-list">
 				<h3>热点专题</h3>
 				<ul>
-					<li><img src="<?php echo Yii::app()->baseUrl ?>/image/c01.jpg" alt="image" class="hotnews"/><div class="hot-title"><h4><a href="#">钱长本：古稀老农的科普情怀</a></h4><p>各全国学会、协会、研究会，...</p></div></li>
+					<li class="first"><img src="<?php echo Yii::app()->baseUrl ?>/image/c01.jpg" alt="image" class="hotnews"/><div class="hot-title"><h4><a href="#">钱长本：古稀老农的科普情怀</a></h4><p>各全国学会、协会、研究会，...</p></div></li>
 					<li><a href="#">山东省乳山市“科普惠农专...</a></li>
 					<li><a href="#">山西省晋中市祁县喜迎科普...</a></li>
-				</ul>
-			</div>
-			<div class="widget round">
-				<h3>图片新闻</h3>
-				<ul>
-					<li><img src="<?php echo Yii::app()->baseUrl ?>/image/n02.jpg" alt="image" class="hotnews"/><div class="hot-title"><h4><a href="#">钱长本：古稀老农的科普情怀</a></h4><p>各全国学会、协会、研究会，...</p></div></li>
-					<li><img src="<?php echo Yii::app()->baseUrl ?>/image/c02.jpg" alt="image" class="hotnews"/><div class="hot-title"><h4><a href="#">钱长本：古稀老农的科普情怀</a></h4><p>各全国学会、协会、研究会，...</p></div></li>
 				</ul>
 			</div>
 		</div>
@@ -72,10 +65,10 @@
 			</div>
 		</div>
 		<div class="span4">
-			<div class="widget round">
+			<div class="widget round news-list">
 				<h3>要闻</h3>
 				<ul>
-					<li><img src="<?php echo Yii::app()->baseUrl ?>/image/n01.jpg" alt="image" class="important-news"/><div class="important-title"><h4><a href="#">钱长本：古稀老农的科普情怀</a></h4><p>各全国学会、协会、研究会，...</p></div></li>
+					<li class="first"><img src="<?php echo Yii::app()->baseUrl ?>/image/n01.jpg" alt="image" class="important-news"/><div class="important-title"><h4><a href="#">钱长本：古稀老农的科普情怀</a></h4><p>各全国学会、协会、研究会，...</p></div></li>
 					<li><a href="#">山东省乳山市“科普惠农专...</a></li>
 					<li><a href="#">山西省晋中市祁县喜迎科普...</a></li>
 					<li><a href="#">全国优秀科技工作者推荐人选信息汇总表</a></li>

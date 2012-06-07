@@ -23,7 +23,7 @@
 <div class="span4">
 <div class="widget widget-notice haizhi-notice">
 	<h3>最新公告<span class="more-only"><a href="#">更多>></a></span></h3>
-	<?php $this->widget('NewsList',array('categoryID'=>92,'lines'=>7,'length'=>18)) ?>
+	<?php $this->widget('NewsList',array('categoryID'=>92,'lines'=>15,'length'=>18)) ?>
 </div>
 </div>
 </div>

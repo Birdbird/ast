@@ -17,13 +17,16 @@
 	height:140px;
 	margin-left:15px;
 }
-.news-dscription h3 a{
+.news-dscription h4 a{
 	text-align:center;
 	color: #316F50;
 	font-size:16px;
 }
 .news-dscription p {
 	color: #888;
+}
+.news-list h3 {
+	background-color:#EEE;
 }
 .news-list span {
 	float: right;
@@ -75,4 +78,16 @@
 }
 .widget ul {
 	margin-bottom:15px;
+}
+.controll-height {
+	height:216px;
+}
+.widget ul li .hot-title a {
+	white-space: normal;
+} 
+.news-list ul li {
+	display: block;
+}
+.news-list ul .first {
+	overflow: hidden;
 }

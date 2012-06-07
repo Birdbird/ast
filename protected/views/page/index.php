@@ -4,7 +4,6 @@
 	$this->widget('SlideShow',array(
 		'slideID'=>1,
 		'id'=>'slideshow1',
-		'config'=>array('controlNav'=>true),
 		// 'htmlOptions'=>array('class'=>'theme-default'),
 	));
 	?>

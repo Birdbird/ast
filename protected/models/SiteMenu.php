@@ -10,8 +10,8 @@ class SiteMenu {
 		array(
 			array('label'=>'首页', 'url'=>array('/page/index')),
 			array('label'=>'走进科协', 'url'=>array('/page/about')),
-			array('label'=>'政策法规', 'url'=>array('/page/news')),
-			array('label'=>'工作动态', 'url'=>array('/page/news')),
+			array('label'=>'政策法规', 'url'=>array('/post/category','id'=>11)),
+			array('label'=>'工作动态', 'url'=>array('/post/category','id'=>7)),
 			array('label'=>'学会之窗', 'url'=>array('/xuehui/index'),'items'=>array(
 				array('label'=>'学会动态', 'url'=>array('/xuehui/index')),
 				array('label'=>'学会介绍', 'url'=>array('/xuehui/index')),
@@ -28,12 +28,12 @@ class SiteMenu {
 			)),
 			array('label'=>'科技者工作者之家', 'url'=>array('/page/index')),
 			array('label'=>'海智计划', 'url'=>array('/haizhi/index'),'items'=>array(
-				array('label'=>'海智新闻', 'url'=>array('/page/news')),
+				array('label'=>'海智新闻', 'url'=>array('/post/category','id'=>44)),
 				array('label'=>'海智简介', 'url'=>array('/post/view','id'=>27)),
-				array('label'=>'海智简讯', 'url'=>array('/page/news')),
-				array('label'=>'筑巢引凤', 'url'=>array('/page/news')),
-				array('label'=>'金凤寻巢', 'url'=>array('/page/news')),
-				array('label'=>'联系我们', 'url'=>array('/page/article')),
+				array('label'=>'海智简讯', 'url'=>array('/post/category','id'=>46)),
+				array('label'=>'筑巢引凤', 'url'=>array('/post/category','id'=>47)),
+				array('label'=>'金凤寻巢', 'url'=>array('/post/category','id'=>48)),
+				array('label'=>'联系我们', 'url'=>array('#')),
 			)),
 			array('label'=>'数字科技馆', 'url'=>array('/page/kejiguan'),'items'=>array(
 				array('label'=>'科普图吧', 'url'=>array('/page/images')),
@@ -70,12 +70,12 @@ class SiteMenu {
 		//海智计划
 		array(
 			array('label'=>'首页', 'url'=>array('/haizhi/index')),
-			array('label'=>'海智新闻', 'url'=>array('/page/news')),
+			array('label'=>'海智新闻', 'url'=>array('/post/category','id'=>44)),
 			array('label'=>'海智简介', 'url'=>array('/post/view','id'=>27)),
-			array('label'=>'海智简讯', 'url'=>array('/page/news')),
-			array('label'=>'筑巢引凤', 'url'=>array('/page/news')),
-			array('label'=>'金凤寻巢', 'url'=>array('/page/news')),
-			array('label'=>'联系我们', 'url'=>array('/page/article')),
+			array('label'=>'海智简讯', 'url'=>array('/post/category','id'=>46)),
+			array('label'=>'筑巢引凤', 'url'=>array('/post/category','id'=>47)),
+			array('label'=>'金凤寻巢', 'url'=>array('/post/category','id'=>48)),
+			array('label'=>'联系我们', 'url'=>array('#')),
 		),
 	);
 	

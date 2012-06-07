@@ -39,6 +39,13 @@
 	float: right;
 	margin-right:10px;
 }
+.content-list {
+	min-height:200px;
+}
+#slideshow1 img {
+width: 300px;
+height: 200px;
+}
 /*.bx_wrap {margin-left: 10px; margin-top:10px} */
 .bx_wrap ul img { border: 2px solid #ddd; } 
 .bx_wrap ul li{text-align:center} 

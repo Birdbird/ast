@@ -76,3 +76,6 @@
 	height:25px;
 	font-size:17px;
 }
+.accordion .zhuxi a {
+	float: left;
+}

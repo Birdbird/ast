@@ -31,6 +31,7 @@
 				array('label'=>'文章管理', 'url'=>array('/admin/post/admin')),
 				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'用户管理', 'url'=>array('/admin/user/admin')),
+				array('label'=>'走进科协管理', 'url'=>array('/admin/organization/admin')),
 				array('label'=>'幻灯片管理', 'url'=>array('/admin/slide/admin')),
 				array('label'=>'图吧管理', 'url'=>array('/admin/image/admin')),
 				array('label'=>'滚动字幕管理', 'url'=>array('/admin/scrolltext/admin')),

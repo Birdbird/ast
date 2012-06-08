@@ -37,6 +37,7 @@
 				array('label'=>'视频管理', 'url'=>array('/admin/video/admin')),
 				array('label'=>'小游戏管理', 'url'=>array('/admin/game/admin')),
 				array('label'=>'学会及动态管理','url'=>array('/admin/xuehui/admin')),
+				array('label'=>'建言献策管理','url'=>array('/admin/advise/admin')),
 				array('label'=>'登录', 'url'=>array('/admin/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'退出 ('.Yii::app()->user->name.')', 'url'=>array('/admin/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

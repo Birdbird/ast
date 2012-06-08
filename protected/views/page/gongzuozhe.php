@@ -1,70 +1,55 @@
 <div class="span9">
 	<div class="widget round ques-answer">
 		<h3>建言献策</h3>
+		<?php foreach ($requests as $request): ?>
 		<div class="widget round answer-content">
 			<div class="top-content">
-				<span>来源：192.168.1.25</span><span>名字：hello kitty</span><span class="public-time">2012-06-06</span>
+				<span>来源：<?php echo $request->ip ?></span>
+				<span>名字：<?php echo $request->nickname?$request->nickname:'匿名' ?></span>
+				<span class="public-time"><?php echo date('Y-m-d',$request->create_time) ?></span>
 			</div>
 			<div class="ques">
-				<p><span>问：</span>请问海门市的第一届科技节有哪些活动，具体的日程安排是什么样的呢？</p>
+				<p><span>问：</span><?php echo $request->content ?></p>
 			</div>
 			<div class="ques">
-				<p><span>答：</span>具体情况，您可以参看海门市科协节的网站，那里会有详细的活动流程等内容，感谢您对我们工作的支持，以后有什么
-					问题或者好的意见，欢迎您即时向我们反馈。</p>
+				<p>
+				<?php if ($request->response): ?>
+					<span>答：</span><?php echo $request->response->content ?>
+				<?php else: ?>
+					<span>暂无答复</span>
+				<?php endif ?>
+				</p>
 			</div>
-		</div>
-		<div class="widget round answer-content">
-			<div class="top-content">
-				<span>来源：192.168.1.25</span><span>名字：hello kitty</span><span class="public-time">2012-06-06</span>
-			</div>
-			<div class="ques">
-				<p><span>问：</span>请问海门市的第一届科技节有哪些活动，具体的日程安排是什么样的呢？</p>
-			</div>
-			<div class="ques">
-				<p><span>答：</span>具体情况，您可以参看海门市科协节的网站，那里会有详细的活动流程等内容，感谢您对我们工作的支持，以后有什么
-					问题或者好的意见，欢迎您即时向我们反馈。</p>
-			</div>
-		</div>
-		<div class="widget round answer-content">
-			<div class="top-content">
-				<span>来源：192.168.1.25</span><span>名字：hello kitty</span><span class="public-time">2012-06-06</span>
-			</div>
-			<div class="ques">
-				<p><span>问：</span>请问海门市的第一届科技节有哪些活动，具体的日程安排是什么样的呢？</p>
-			</div>
-			<div class="ques">
-				<p><span>答：</span>具体情况，您可以参看海门市科协节的网站，那里会有详细的活动流程等内容，感谢您对我们工作的支持，以后有什么
-					问题或者好的意见，欢迎您即时向我们反馈。</p>
-			</div>
-		</div>
-		<div class="widget round answer-content">
-			<div class="top-content">
-				<span>来源：192.168.1.25</span><span>名字：hello kitty</span><span class="public-time">2012-06-06</span>
-			</div>
-			<div class="ques">
-				<p><span>问：</span>请问海门市的第一届科技节有哪些活动，具体的日程安排是什么样的呢？</p>
-			</div>
-			<div class="ques">
-				<p><span>答：</span>具体情况，您可以参看海门市科协节的网站，那里会有详细的活动流程等内容，感谢您对我们工作的支持，以后有什么
-					问题或者好的意见，欢迎您即时向我们反馈。</p>
-			</div>
-		</div>
-		<div class="widget round answer-content">
-			<div class="top-content">
-				<span>来源：192.168.1.25</span><span>名字：hello kitty</span><span class="public-time">2012-06-06</span>
-			</div>
-			<div class="ques">
-				<p><span>问：</span>请问海门市的第一届科技节有哪些活动，具体的日程安排是什么样的呢？</p>
-			</div>
-			<div class="ques">
-				<p><span>答：</span>具体情况，您可以参看海门市科协节的网站，那里会有详细的活动流程等内容，感谢您对我们工作的支持，以后有什么
-					问题或者好的意见，欢迎您即时向我们反馈。</p>
-			</div>
-		</div>
-		<div class="input-text">
-			名字(可选)：<input type="text" class="name">
-			建言内容：<textarea cols="60" rows="8" class="advice"></textarea>
-			<input type="submit" class="submmit" value="提交">
+		</div>	
+		<?php endforeach ?>
+		
+		<?php $this->widget('CLinkPager', array(
+				'header'=>'',
+		    'pages' => $pagination,
+		)) ?>
+		<div class="input-text">			
+			<?php $form=$this->beginWidget('CActiveForm', array(
+				'id'=>'advise-form',
+				'enableAjaxValidation'=>false,
+			)); ?>
+
+				<div class="row">
+					<label>姓名(可选)</label>
+					<?php echo $form->textField($model,'nickname',array('size'=>20,'maxlength'=>20)); ?>
+					<?php echo $form->error($model,'name'); ?>
+				</div>
+
+				<div class="row">
+					<?php echo $form->labelEx($model,'content'); ?>
+					<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>70)); ?>
+					<?php echo $form->error($model,'content'); ?>
+				</div>
+
+				<div class="row buttons">
+					<?php echo CHtml::submitButton('提交',array('class'=>'submit')); ?>
+				</div>
+
+			<?php $this->endWidget(); ?>
 		</div>
 	</div>
 </div>

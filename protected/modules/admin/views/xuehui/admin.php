@@ -41,6 +41,7 @@ $('.search-form form').submit(function(){
 		// 'intro',
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{update}{delete}',
 		),
 	),
 )); ?>

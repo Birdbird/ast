@@ -116,7 +116,7 @@
 			<div class="slide-title"><p>科普视频</p></div>
 			<div class="science-pics">
 				<ul class="images-more">
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/<?php echo Yii::app()->baseUrl ?>/image/k01.jpg" alt="test image 1"/></a>
+					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/k01.jpg" alt="test image 1"/></a>
 					</li>
 					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/k02.jpg" alt="test image 2"/></a>
 					</li>

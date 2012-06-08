@@ -55,7 +55,7 @@
 </div>
 <div class="span3">
 	<div class="round link-luntan">
-		<p><a href="#">海门公众与科学网论坛入口</a></p>
+		<p><a href="http://ast.birdbird.net/bbs" target='_blank'>海门公众与科学网论坛入口</a></p>
 	</div>
 	<div class="widget round">
 		<?php $this->widget('HotList') ?>

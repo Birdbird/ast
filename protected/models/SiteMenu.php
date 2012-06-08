@@ -25,7 +25,7 @@ class SiteMenu {
 				array('label'=>'工作动态', 'url'=>array('/post/category','id'=>34)),
 				array('label'=>'重要文件', 'url'=>array('/post/category','id'=>40)),
 				array('label'=>'文献资料', 'url'=>array('/post/category','id'=>89)),
-				array('label'=>'联系我们', 'url'=>array('#')),
+				array('label'=>'联系我们', 'url'=>array('/post/view','id'=>224)),
 			)),
 			array('label'=>'科技者工作者之家', 'url'=>array('/page/gongzuozhe')),
 			array('label'=>'海智计划', 'url'=>array('/haizhi/index'),'items'=>array(
@@ -56,7 +56,7 @@ class SiteMenu {
 			array('label'=>'荣誉之窗', 'url'=>array('/huinong/rongyu')),
 			array('label'=>'内容简介', 'url'=>array('/post/view','id'=>79)),
 			array('label'=>'下载中心', 'url'=>array('/post/category','id'=>19)),
-			array('label'=>'联系我们', 'url'=>array('/post/view','id'=>219)),
+			array('label'=>'联系我们', 'url'=>array('/post/view','id'=>224)),
 		),
 		//全民素质
 		array(
@@ -65,7 +65,7 @@ class SiteMenu {
 			array('label'=>'工作动态', 'url'=>array('/post/category','id'=>34)),
 			array('label'=>'重要文件', 'url'=>array('/post/category','id'=>40)),
 			array('label'=>'文献资料', 'url'=>array('/post/category','id'=>89)),
-			array('label'=>'联系我们', 'url'=>array('#')),
+			array('label'=>'联系我们', 'url'=>array('/post/view','id'=>224)),
 		),
 		//海智计划
 		array(
@@ -75,7 +75,7 @@ class SiteMenu {
 			array('label'=>'海智简讯', 'url'=>array('/post/category','id'=>46)),
 			array('label'=>'筑巢引凤', 'url'=>array('/post/category','id'=>47)),
 			array('label'=>'金凤寻巢', 'url'=>array('/post/category','id'=>48)),
-			array('label'=>'联系我们', 'url'=>array('#')),
+			array('label'=>'联系我们', 'url'=>array('/post/view','id'=>224)),
 		),
 		array(
 			array('label'=>'首页', 'url'=>array('/shequ/index')),
@@ -83,7 +83,7 @@ class SiteMenu {
 			array('label'=>'荣誉之窗', 'url'=>array('/shequ/rongyu')),
 			array('label'=>'内容简介', 'url'=>array('/post/view','id'=>79)),
 			array('label'=>'下载中心', 'url'=>array('/post/category','id'=>77)),
-			array('label'=>'联系我们', 'url'=>array('/post/view','id'=>219)),
+			array('label'=>'联系我们', 'url'=>array('/post/view','id'=>224)),
 		),
 	);
 	

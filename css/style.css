@@ -1390,3 +1390,7 @@ font-size:22px;
   height: 196px;
   margin: 0;
 }
+#widget1 .right-list li img {
+  border:1px solid #CCC;
+  padding:1px;
+}

@@ -29,3 +29,7 @@
 	float: right;
 	margin-right:10px;
 }
+.pic-list img {
+	border:1px solid #CCC;
+	padding:3px;
+}

@@ -24,9 +24,9 @@
 </div>
 <div class="round scoll-text">
 	<ul> 
-		<li>热烈庆祝海门市公众与科学网改版</li> 
-		<li>热烈欢迎上级领导来海门市视察，参观，访问</li> 
-		<li>预祝海门市第一届科技节圆满成功</li> 
+		<?php foreach ($scrolltexts as $scrolltext): ?>
+			<li><?php echo $scrolltext->text ?></li>
+		<?php endforeach ?>
 	</ul> 
 </div>
 <div>
@@ -78,48 +78,13 @@
 		<h3>身边科学<span class="more-only"><a href="<?php echo $this->createUrl('page/shenbian') ?>">更多>></a></span></h3>
 		<div class="right-list">
 			<ul>
-				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/c02.jpg" alt="test image"/>
-				<div class="pic-detatil">
-					<h3><a href="#">别让晚睡成为一种病</a></h3>
-					<p>每每想到早睡就是浪费生命，我总是强迫自己困了也不睡，这样可以多看些...</p>
-				</div>
-				</li>
-				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/c01.jpg" alt="test image"/>
-				<div class="pic-detatil">
-					<h3><a href="#">光照胎教”很不靠谱</a></h3>
-					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
-				</div>
-				</li>
-				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/t05.jpg" alt="test image"/>
-				<div class="pic-detatil">
-					<h3><a href="#">家庭节能小常识</a></h3>
-					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
-				</div>
-				</li>
-				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/t01.jpg" alt="test image"/>
-				<div class="pic-detatil">
-					<h3><a href="#">生活小常识</a></h3>
-					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
-				</div>
-				</li>
-				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/t02.jpg" alt="test image"/>
-				<div class="pic-detatil">
-					<h3><a href="#">水果的妙用</a></h3>
-					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
-				</div>
-				</li>
-				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/t05.jpg" alt="test image"/>
-				<div class="pic-detatil">
-					<h3><a href="#">家庭节能小常识</a></h3>
-					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
-				</div>
-				</li>
-				<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/image/t01.jpg" alt="test image"/>
-				<div class="pic-detatil">
-					<h3><a href="#">生活小常识</a></h3>
-					<p>最近一段时间，一些育儿网站上“光照胎教”被炒得火热，一些健康频道还打出...</p>
-				</div>
-				</li>
+				<?php foreach ($slidernews as $slidernew): ?>
+					<li class="clearfix"><img src="<?php echo Yii::app()->baseUrl ?>/upload/thumbnail/<?php echo $slidernew->thumbnail ?>" alt="图片"/>
+					<div class="pic-detatil">
+						<h3><?php echo CHtml::link(mb_substr($slidernew->title,0,9), array('post/view','id'=>$slidernew->id),array('title'=>$slidernew->title)) ?></h3>
+						<p><?php echo mb_substr(strip_tags($slidernew->content),0,33) ?></p>
+					</div>
+				<?php endforeach ?>
 			</ul>
 		</div>
 	</div>
@@ -131,12 +96,12 @@
 		<h3>海智计划<span class="more-only"><a href="<?php echo $this->createUrl('haizhi/index') ?>">更多>></a></span></h3>
 		<div class="span2">
 			<ul class="images">
-				<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic01.jpg" alt="test image 1"/></a>
-					<cite><a href="#">李源潮“七个要”促进...</a></cite>
-				</li>
-				<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/pic02.jpg" alt="test image 2"/></a>
-					<cite><a href="#">“海智计划”对接会引...</a></cite>
-				</li>
+				<?php foreach ($haizhinews as $haizhinew): ?>
+					<li><a href="<?php echo $this->createUrl('page/view',array('id'=>$haizhinew->id)) ?>">
+						<img src="<?php echo Yii::app()->baseUrl ?>/upload/thumbnail/<?php echo $haizhinew->thumbnail ?>"></a>
+						<cite><?php echo CHtml::link(mb_substr($haizhinew->title,0,8), array('post/view','id'=>$haizhinew->id),array('title'=>$haizhinew->title)) ?></cite>
+					</li>
+				<?php endforeach ?>
 			</ul>
 		</div>
 		<div class="span4 widget3 ">

@@ -10,5 +10,6 @@ Thumbs.db
 config/main.php
 /index.php
 
+/upload/
 /assets
 runtime

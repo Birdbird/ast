@@ -39,11 +39,12 @@
 	</div>
 	<div class="widget round pic-list">
 		<ul>
-			<li><img src="image/t01.jpg" alt="image" class="pictures"/><div class="content"><h4><a href="*">生活小常识</a></h4><p>日前，一份关于健康年龄指数的调研报告称，中国人的“健康赤字”为8.2岁...</p></div></li>
-			<li><img src="image/t02.jpg" alt="image" class="pictures"/><div class="content"><h4><a href="*">水果的妙用</a></h4><p>日前，一份关于健康年龄指数的调研报告称，中国人的“健康赤字”为8.2岁...</p></div></li>
-			<li><img src="image/t03.jpg" alt="image" class="pictures"/><div class="content"><h4><a href="*">维生素的最佳摄入</a></h4><p>日前，一份关于健康年龄指数的调研报告称，中国人的“健康赤字”为8.2岁...</p></div></li>
-			<li><img src="image/t04.jpg" alt="image" class="pictures"/><div class="content"><h4><a href="*">情绪影响身体的健康</a></h4><p>日前，一份关于健康年龄指数的调研报告称，中国人的“健康赤字”为8.2岁...</p></div></li>
-			<li><img src="image/t05.jpg" alt="image" class="pictures"/><div class="content"><h4><a href="*">膳食平衡搭配</a></h4><p>日前，一份关于健康年龄指数的调研报告称，中国人的“健康赤字”为8.2岁...</p></div></li>
+			<?php foreach ($slidernews as $slidernew): ?>
+				<li><img src="<?php echo Yii::app()->baseUrl.'/upload/thumbnail/'.$slidernew->thumbnail ?>" alt="图片" class="pictures"><div class="content">
+					<h4><?php echo CHtml::link(mb_substr($slidernew->title, 0,8), array('post/view','id'=>$slidernew->id),array('title'=>$slidernew->title)) ?></h4>
+					<?php echo mb_substr(strip_tags($slidernew->content), 0,32) ?>
+				</div></li>
+			<?php endforeach ?>
 		</ul>
 	</div>
 </div>

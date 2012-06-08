@@ -5,6 +5,9 @@ class PageController extends FrontController
 	{
 		$cilentScript = Yii::app()->clientScript;
 		$this->addSlider(array('directionNav'=>false));
+		$slidernews = Post::model()->findAll(array('condition'=>'thumbnail !=0 and category_id in (select id from category where root =57)','limit'=>7,'order'=>'id desc'));
+		$haizhinews = Post::model()->findAll(array('condition'=>'thumbnail !=0 and category_id in (select id from category where root =43)','limit'=>2,'order'=>'id desc'));
+		$scrolltexts = ScrollText::model()->findAll(array('limit'=>8,'order'=>'id desc'));
 		$cilentScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.carouFredSel-5.6.0-packed.js',
 			CClientScript::POS_END);
 		$script = <<<EOD
@@ -12,7 +15,7 @@ $('.scoll-text ul').carouFredSel({width:940,scroll:{pauseOnHover:true,easing:'li
 $('#scoll-notice').carouFredSel({scroll:{'pauseOnHover': true,items:1,duration:200},direction: "up",height:207});
 EOD;
 		$cilentScript->registerScript('index',$script);
-		$this->render('index');
+		$this->render('index',array('slidernews'=>$slidernews,'haizhinews'=>$haizhinews,'scrolltexts'=>$scrolltexts));
 	}
 	
 	public function actionAbout($id=6)
@@ -79,7 +82,8 @@ EOD;
 	public function actionShenbian()
 	{
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/shenbian.css');
-		$this->render('shenbian');
+		$slidernews = Post::model()->findAll(array('condition'=>'thumbnail !=0 and category_id in (select id from category where root =57)','limit'=>5,'order'=>'id desc'));
+		$this->render('shenbian',array('slidernews'=>$slidernews));
 	}
 	
 	public function actionDownload()

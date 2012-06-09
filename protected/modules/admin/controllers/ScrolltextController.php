@@ -1,6 +1,6 @@
 <?php
 
-class ScrollTextController extends Controller
+class ScrolltextController extends Controller
 {
     public $layout='column2';
 

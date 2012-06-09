@@ -1061,15 +1061,17 @@ body {
 .science-pics{
   float: left;
   display: inline;
-  margin-left:15px;
+  margin-left:9px;
 }
 .images-more li {
   float: left;
-  margin:8px;
+  margin:5px;
 }
 .images-more li img{
   width:86px;
   height:86px;
+  border:1px solid #CCC;
+  padding:1px;
 }
 #footer {
   background-color:white;

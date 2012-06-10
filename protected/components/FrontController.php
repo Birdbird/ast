@@ -3,6 +3,7 @@ class FrontController extends CController
 {
 	public $menuID = SiteMenu::Index;
 	public $title = false;
+	public $breadcrumbs=array();
 	
 	public function init()
 	{

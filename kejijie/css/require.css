@@ -1,0 +1,163 @@
+.company-active {
+	width:465px;
+	height:260px;
+	background-color:white;
+	float: left;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+.new-company {
+	overflow: hidden;
+	width:195px;
+	height:260px;
+	background-color:white;
+	margin-bottom:20px;
+}
+.company-title h3{
+	font-size:18px;
+	color:white;
+	padding:5px 10px;
+}
+.company {
+	height:300px;
+	background-color:white;
+	overflow: hidden;
+}
+.company-title {
+	width:100%;
+	height:30px;
+	background-color:#6E94F1;	
+}
+.content-list,.new-company ul ,.require ul {
+	margin-top:5px;
+}
+.content-list li {
+	line-height:24px;
+	padding-left:15px;
+}
+.content-list li a,.new-company li a,.require li  {
+	font-size:13px;
+	color:#333;
+}
+.content-list li span{
+	font-size:12px;
+	color:#888;
+	float: right;
+	margin-right:3px;
+}
+.content-list li a:hover,.new-company li a:hover,.require li a:hover {
+	color:red;
+	text-decoration:underline;
+}
+.new-company ul li,.require li  {
+	line-height:24px;
+	padding-left:15px;	
+}
+.company-title span {
+	font-size:13px;
+	color:#888;
+	float: right;
+	margin-right:3px;
+}
+.company-name {
+	width:370px;
+	float: left;
+}
+.contact,.tel {
+	width:140px;
+	float: left;
+}
+.first {
+	background-color:#1B95B3;
+}
+.company-intro ,.company-require ,.company-contact{
+	height:250px;
+	background-color:white;
+}
+.company-intro img {
+	width:40%;
+	margin:15px;
+	border:1px solid #CCC;
+	float: left;
+	padding:5px;
+}
+.detail {
+	overflow: hidden;
+	margin-top:15px;
+}
+.detail h3 {
+	text-align:center;
+	color:#009;
+	padding:5px;
+}
+.detail p {
+	padding:0 10px;
+	font-size:14px;
+	color:#333;
+}
+.company-contact p{
+	font-size:14px;
+	color:#333;
+	padding:5px 15px;
+	line-height:24px;
+}
+.require .first {
+	font-size:15px;
+	color:#00566C;
+}
+.content-list li {
+	line-height:22px;
+	border-bottom:1px solid #CCC;
+}
+.content-list li .projectlist {
+	width:350px;
+	text-align:left;
+	color:#333;
+	font-size:14px;
+}
+.content-list li .projectlist a {
+	background:none;
+}
+.content-list .projectfirst,.content-list li .projectlist {
+	font-size:15px;
+	line-height:25px;
+	color:#00566C;
+}
+.requiretable {
+	width:650px;
+	margin:0 20px;
+}
+.requiretable h3{
+	color:white;
+	font-size:18px;
+	text-align:center;
+}
+.requiretable table {
+	border:1px solid #CCC;
+	margin-top:10px;
+	color:#333;
+}
+.requiretable table tr {
+	width:670px;
+	border:1px solid #CCC;
+	padding-left:5px;
+}
+.requiretable table td {
+	border:1px solid #CCC;
+}
+.requiretable table tr .left {
+	width:85px;
+	text-align:center;
+	padding:8px;
+}
+.artical-footer {
+	margin-top:15px;
+}
+.artical-footer p {
+	line-height:22px;
+	padding:3px;
+}
+.artical-footer p a {
+	font-size:13px;
+
+}

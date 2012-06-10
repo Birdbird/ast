@@ -116,14 +116,10 @@
 			<div class="slide-title"><p>科普视频</p></div>
 			<div class="science-pics">
 				<ul class="images-more">
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/k01.jpg" alt="test image 1"/></a>
-					</li>
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/k02.jpg" alt="test image 2"/></a>
-					</li>
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/k03.jpg" alt="test image 1"/></a>
-					</li>
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/t07.jpg" alt="test image 2"/></a>
-					</li>
+					<?php foreach ($videos as $videoitem): ?>
+						<li><a href="<?php echo $this->createUrl('page/video') ?>">
+							<img src="<?php echo Yii::app()->baseUrl ?>/upload/thumbnail/<?php echo $videoitem->thumbnail ?>"></a></li>
+					<?php endforeach ?>
 				</ul>
 			</div>
 		</div>
@@ -131,14 +127,11 @@
 			<div class="slide-title"><p>科普小游戏</p></div>
 			<div class="science-pics">
 				<ul class="images-more">
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/g01.jpg" alt="test image 1"/></a>
-					</li>
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/g02.jpg" alt="test image 2"/></a>
-					</li>
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/g03.jpg" alt="test image 1"/></a>
-					</li>
-					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/t08.jpg" alt="test image 2"/></a>
-					</li>
+					<?php foreach ($games as $game): ?>
+						<li><a href="<?php echo $this->createUrl('page/game') ?>">
+							<img src="<?php echo Yii::app()->baseUrl ?>/upload/thumbnail/<?php echo $game->thumbnail ?>">
+						</a></li>
+					<?php endforeach ?>
 				</ul>
 			</div>
 		</div>

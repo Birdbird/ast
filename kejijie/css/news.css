@@ -1,0 +1,33 @@
+.news-icon{
+	width:30px;
+	height:30px;
+	margin:3px;
+}
+.news-time{
+	float: right;
+	margin-right:10px;
+	line-height:30px;
+}
+.news-last{
+	border-bottom:1px dashed #999;
+}
+.news-bottom {
+	text-align:center;
+}
+.news-bottom input{
+	width:20px;
+}
+
+.content-list ul li a {
+	padding-left:15px;
+	background:url(../images/icon02.gif) 0 50% no-repeat;
+}
+
+.content-list ul li {
+	display:block;
+	height:30px;
+}
+
+.content-list {
+	min-height:450px;
+}

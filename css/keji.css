@@ -48,3 +48,12 @@
 	font-size:15px;
 	color: #777;
 }
+.newsvideo h4 {
+	margin-top:10px;
+	color:#333;
+}
+.newsvideo img {
+	height:150px;
+	width:250px;
+	padding:15px;
+}

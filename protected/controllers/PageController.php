@@ -8,6 +8,8 @@ class PageController extends FrontController
 		$slidernews = Post::model()->findAll(array('condition'=>'thumbnail !=0 and category_id in (select id from category where root =57)','limit'=>7,'order'=>'id desc'));
 		$haizhinews = Post::model()->findAll(array('condition'=>'thumbnail !=0 and category_id in (select id from category where root =43)','limit'=>2,'order'=>'id desc'));
 		$scrolltexts = ScrollText::model()->findAll(array('limit'=>8,'order'=>'id desc'));
+		$videos = Video::model()->findAll(array('limit'=>4,'order'=>'id desc'));
+		$games = Game::model()->findAll(array('limit'=>4,'order'=>'id desc'));
 		$cilentScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.carouFredSel-5.6.0-packed.js',
 			CClientScript::POS_END);
 		$script = <<<EOD
@@ -15,7 +17,8 @@ $('.scoll-text ul').carouFredSel({width:940,scroll:{pauseOnHover:true,easing:'li
 $('#scoll-notice').carouFredSel({scroll:{'pauseOnHover': true,items:1,duration:200},direction: "up",height:207});
 EOD;
 		$cilentScript->registerScript('index',$script);
-		$this->render('index',array('slidernews'=>$slidernews,'haizhinews'=>$haizhinews,'scrolltexts'=>$scrolltexts));
+		$this->render('index',array('slidernews'=>$slidernews,'haizhinews'=>$haizhinews,'scrolltexts'=>$scrolltexts,
+			'videos'=>$videos,'games'=>$games));
 	}
 	
 	public function actionAbout($id=6)
@@ -74,9 +77,23 @@ EOD;
 	
 	public function actionKejiguan()
 	{
+		$videoitems = Video::model()->findAll(array('limit'=>4,'order'=>'id desc'));
+		$games = Game::model()->findAll(array('limit'=>4,'order'=>'id desc'));
+		$videos = Video::model()->find(array('order'=>'id desc'));
+		$album = Album::model()->findByPk('1');
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/keji.css');
+		$this->loadPrettyPhoto();
 		$this->addSlider(array('directionNav'=>false));
-		$this->render('kejiguan');
+		$this->render('kejiguan',array('videos'=>$videos,'videoitems'=>$videoitems,'games'=>$games,'album'=>$album));
+	}
+
+	protected function loadPrettyPhoto()
+	{
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/prettyPhoto.css');
+		Yii::app()->clientScript->registerScriptFile(
+			Yii::app()->baseUrl.'/js/jquery.prettyPhoto.js',CClientScript::POS_END);
+		Yii::app()->clientScript->registerScript('prettyPhoto',
+			'$("a[rel^=\'prettyPhoto\']").prettyPhoto({social_tools:""});');
 	}
 	
 	public function actionShenbian()
@@ -95,9 +112,9 @@ EOD;
 	public function actionImages()
 	{
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/keji.css');
-		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/lightbox.css');
-		Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/lightbox.js',CClientScript::POS_END);
-		$this->render('images');
+		$this->loadPrettyPhoto();
+		$album = Album::model()->findByPk('1');
+		$this->render('images',array('album'=>$album));
 	}
 	
 	public function actionGongzuozhe()
@@ -133,11 +150,7 @@ EOD;
 	{
 		$this->title = '科普视频';
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/keji.css');
-		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/prettyPhoto.css');
-		Yii::app()->clientScript->registerScriptFile(
-			Yii::app()->baseUrl.'/js/jquery.prettyPhoto.js',CClientScript::POS_END);
-		Yii::app()->clientScript->registerScript('prettyPhoto',
-			'$("a[rel^=\'prettyPhoto\']").prettyPhoto({social_tools:""});');
+		$this->loadPrettyPhoto();
 			
 		$videos = Video::model()->findAll();
 		$this->render('video',array('videos'=>$videos));
@@ -147,11 +160,7 @@ EOD;
 	{
 		$this->title = '科普游戏';
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/keji.css');
-		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/prettyPhoto.css');
-		Yii::app()->clientScript->registerScriptFile(
-			Yii::app()->baseUrl.'/js/jquery.prettyPhoto.js',CClientScript::POS_END);
-		Yii::app()->clientScript->registerScript('prettyPhoto',
-			'$("a[rel^=\'prettyPhoto\']").prettyPhoto({social_tools:""});');
+		$this->loadPrettyPhoto();
 			
 		$games = Game::model()->findAll();
 		$this->render('game',array('games'=>$games));

@@ -1,0 +1,46 @@
+.list1 {
+	width:332px;
+	margin:5px;
+	height:126px;
+	float: left;
+}
+.list1 img {
+	width:80px;
+	height:115px;
+	padding:5px;
+	border:1px solid #888;
+}
+.list1 .pro-intro {
+	float: right;
+	width:215px;
+	padding:10px;
+}
+.pro-intro p {
+	line-height:24px;
+	font-size:14px;
+	color:#333;
+}
+.pro-intro .click-link a {
+	color:#053390;
+}
+.intro-detail {
+	background-color:white;
+	overflow: hidden;
+}
+.intro-detail img {
+	width:222px;
+	height:277px;
+	border:1px solid #888;
+	padding:5px;
+	margin-top:5px;
+}
+.introduction {
+	width:418px;
+	float: right;
+	padding:5px 10px;
+}
+.introduction p {
+	font-size:13px;
+	line-height:22px;
+	color:#333;
+}

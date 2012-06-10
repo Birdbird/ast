@@ -87,9 +87,9 @@
 			<div class="widget round haizhi-links">
 				<h3>相关链接</h3>
 				<ul>
-					<li><a href="#"><img src="image/haizhi01.jpg" alt="test country links images"/></a></li>
-					<li><a href="#"><img src="image/haizhi02.jpg" alt="test country links images"/></a></li>
-					<li><a href="#"><img src="image/haizhi03.jpg" alt="test country links images"/></a></li>
+					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/haizhi01.jpg" alt="test country links images"/></a></li>
+					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/haizhi02.jpg" alt="test country links images"/></a></li>
+					<li><a href="#"><img src="<?php echo Yii::app()->baseUrl ?>/image/haizhi03.jpg" alt="test country links images"/></a></li>
 				</ul>
 			</div>			
 		</div>
@@ -98,14 +98,12 @@
 <div class="widget round flash-left ">
 <div class="bx_wrap"> 
    <div class="bx_container"> 
-      <ul id="demo1"> 
-          <li><img  alt="#" width="140" height="94" src="flash_image/s1.jpg"></li> 
-          <li><img  alt="#" width="140" height="94" src="flash_image/s2.jpg"></li> 
-          <li><img  alt="#" width="140" height="94" src="flash_image/s3.jpg"></li> 
-          <li><img  alt="#" width="140" height="94" src="flash_image/s4.jpg"></li> 
-          <li><img  alt="#" width="140" height="94" src="flash_image/s5.jpg"></li> 
-          <li><img  alt="#" width="140" height="94" src="flash_image/s6.jpg"></li> 
-          <li><img  alt="#" width="140" height="94" src="flash_image/s7.jpg"></li> 
+      <ul id="demo1">
+			<?php foreach ($bottomSlide->images as $slideimage): ?>
+				<li><a href="<?php echo $slideimage->url ?>">
+					<img title="<?php echo $slideimage->title ?>" width="140" height="94" src="<?php echo Yii::app()->baseUrl.'/upload/slide/'.$slideimage->image ?>">
+				</a></li> 
+			<?php endforeach ?>
        </ul> 
     </div> 
  </div>

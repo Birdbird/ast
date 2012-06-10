@@ -46,35 +46,6 @@ EOD;
 		$this->render('news');
 	}
 	
-	public function actionAgriculture()
-	{
-		$cilentScript = Yii::app()->clientScript;
-		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/country.css');
-		$this->addSlider();
-		$this->render('country');
-	}
-	
-	public function actionSuzhi()
-	{
-		$cilentScript = Yii::app()->clientScript;
-		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/suzhi.css');
-		$this->addSlider();
-		$this->render('suzhi');
-	}
-	
-	public function actionHaizhi()
-	{
-		$cilentScript = Yii::app()->clientScript;
-		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/haizhi.css');
-		$this->addSlider();
-		$cilentScript->registerScriptFile(Yii::app()->baseUrl.'/js/bxCarousel.js',CClientScript::POS_END);
-		$script = <<<EOD
-		$("#demo1").bxCarousel({ display_num: 7,  move: 1,  auto: true,  controls: false, margin: 0 });
-EOD;
-		$cilentScript->registerScript('haizhi',$script);
-		$this->render('haizhi');
-	}
-	
 	public function actionKejiguan()
 	{
 		$videoitems = Video::model()->findAll(array('limit'=>4,'order'=>'id desc'));

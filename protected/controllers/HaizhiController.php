@@ -12,7 +12,7 @@ class HaizhiController extends FrontController
 		$("#demo1").bxCarousel({ display_num: 7,  move: 1,  auto: true,  controls: false, margin: 0 });
 EOD;
 		$cilentScript->registerScript('haizhi',$script);
-		
-		$this->render('index');
+		$bottomSlide = Slide::model()->findByPk(1);
+		$this->render('index',array('bottomSlide'=>$bottomSlide));
 	}
 }

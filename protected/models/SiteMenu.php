@@ -6,6 +6,22 @@ class SiteMenu {
 	const Haizhi = 3;
 	const Yimin = 4;
 	
+	public static $categories =array(
+		'65'=>SiteMenu::Huinong,
+		'66'=>SiteMenu::Yimin,
+		'31'=>SiteMenu::Suzhi,
+		'43'=>SiteMenu::Haizhi,
+	);
+	
+	public static $breadcrumbs =array(
+		'11'=>array('政策法规'),
+		'7'=>array('工作动态'),
+		'65'=>array('科普惠农'=>array('huinong/index')),
+		'66'=>array('社区科普益民'=>array('shequ/index')),
+		'31'=>array('全民科学素质行动'=>array('suzhi/index')),
+		'43'=>array('海智计划'=>array('haizhi/index')),
+	);
+	
 	public static $items = array(
 		//首页
 		array(
@@ -51,7 +67,7 @@ class SiteMenu {
 		),
 		//科普惠农
 		array(
-			array('label'=>'首页', 'url'=>array('/huinong/index')),
+			array('label'=>'科普惠农', 'url'=>array('/huinong/index')),
 			array('label'=>'通知通告', 'url'=>array('/post/category','id'=>16)),
 			array('label'=>'荣誉之窗', 'url'=>array('/huinong/rongyu')),
 			array('label'=>'内容简介', 'url'=>array('/post/view','id'=>79)),
@@ -60,7 +76,7 @@ class SiteMenu {
 		),
 		//全民素质
 		array(
-			array('label'=>'首页', 'url'=>array('/suzhi/index')),
+			array('label'=>'全民科学素质行动', 'url'=>array('/suzhi/index')),
 			array('label'=>'热点新闻', 'url'=>array('/post/category','id'=>32)),
 			array('label'=>'工作动态', 'url'=>array('/post/category','id'=>34)),
 			array('label'=>'重要文件', 'url'=>array('/post/category','id'=>40)),
@@ -69,7 +85,7 @@ class SiteMenu {
 		),
 		//海智计划
 		array(
-			array('label'=>'首页', 'url'=>array('/haizhi/index')),
+			array('label'=>'海智计划', 'url'=>array('/haizhi/index')),
 			array('label'=>'海智新闻', 'url'=>array('/post/category','id'=>44)),
 			array('label'=>'海智简介', 'url'=>array('/post/view','id'=>27)),
 			array('label'=>'海智简讯', 'url'=>array('/post/category','id'=>46)),
@@ -77,8 +93,9 @@ class SiteMenu {
 			array('label'=>'金凤寻巢', 'url'=>array('/post/category','id'=>48)),
 			array('label'=>'联系我们', 'url'=>array('/post/view','id'=>224)),
 		),
+		//社区科普
 		array(
-			array('label'=>'首页', 'url'=>array('/shequ/index')),
+			array('label'=>'社区科普益民', 'url'=>array('/shequ/index')),
 			array('label'=>'通知通告', 'url'=>array('/post/category','id'=>68)),
 			array('label'=>'荣誉之窗', 'url'=>array('/shequ/rongyu')),
 			array('label'=>'内容简介', 'url'=>array('/post/view','id'=>79)),

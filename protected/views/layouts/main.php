@@ -29,27 +29,7 @@
 			<img src="<?php echo Yii::app()->baseUrl ?>/image/hb1.jpg"/>
 			<img src="<?php echo Yii::app()->baseUrl ?>/image/hb2.jpg"/>
 		</div> -->
-		<?php
-		$this->widget('ext.nivoslider.ENivoSlider',array(
-					'images'=>array(
-						array('src'=>Yii::app()->baseUrl.'/image/hb1.jpg'),//,'caption'=>'为海门经济社会发展服务'
-						array('src'=>Yii::app()->baseUrl.'/image/hb2.jpg'),//,'caption'=>'为提高全民科学素质服务'
-						array('src'=>Yii::app()->baseUrl.'/image/hb3.jpg'),//,'caption'=>'为广大科技工作者服务'
-					),
-					'htmlOptions'=>array('class'=>'images'),
-					'config'=>array(
-						'directionNav'=>false,
-						'controlNav'=>false,
-						'pauseOnHover'=>false,
-						'pauseTime'=>5000,
-					)
-				));
-		?>
-		<div id="fly-text">
-			<p>为海门经济社会发展服务</p>
-			<p>为提高全民科学素质服务</p>
-			<p>为广大科技工作者服务</p>
-		</div>
+		<embed width="640" height="278" align="left" type="application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="sameDomain" quality="high" src="<?php echo Yii::app()->baseUrl ?>/image/slide.swf"></embed>
 		<!-- <a id="logo" href="<?php echo Yii::app()->createAbsoluteUrl('/') ?>"><span>海门市</span>公众与科学网</a> -->
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'id'=>'main-nav',
@@ -64,6 +44,12 @@
 	<h2><?php echo $this->title ?></h2>
 	<?php endif ?>
 	<div class="row">
+	<div class="span12">
+	<?php
+	if(count($this->breadcrumbs))
+		$this->widget('zii.widgets.CBreadcrumbs', array('links'=>$this->breadcrumbs));
+	?>
+	</div>
 	<?php echo $content; ?>
 	</div>
 </div>

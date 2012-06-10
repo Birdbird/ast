@@ -1,9 +1,9 @@
 #header {
 	margin-top:10px;
 	padding:0;
-	height:278px;
+	height:305px;
 	background:none;
-	margin-bottom:25px;
+	margin-bottom:20px;
 }
 
 #header .images {
@@ -26,14 +26,14 @@
 	width:295px;
 	border-right:5px solid #13253b;
 	background:url(../img/logo.jpg);
-	-webkit-border-radius: 10px 0;
-  -moz-border-radius: 10px 0;
-  border-radius: 10px 0;
+	-webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
 	text-indent:-9999px;
 }
 
 #main-nav {
-	top:250px;
+	top:275px;
 	border:1px solid #C6DAED;
 }
 
@@ -48,4 +48,9 @@
 	filter: alpha(opacity=5);
 	opacity:0.5;
 	padding:10px 15px;
+}
+
+.breadcrumbs {
+	padding-left: 5px;
+	margin-bottom: 5px;
 }

@@ -50,6 +50,7 @@ class Category extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'parent'=>array(self::BELONGS_TO,'Category','root'),
 		);
 	}
 
@@ -70,10 +71,23 @@ class Category extends CActiveRecord
 		$categories = array();
 		do {
 			$category = Category::model()->findByPk($id);
-			if($category) $categories[]=$category;
+			if(!$category) break;
+			$categories[]=$category;
 			$id = $category->root;
 		} while ($category->root);
 		return array_reverse($categories);
+	}
+	
+	public static function categoryIDList($id)
+	{
+		$categories = array();
+		do {
+			$category = Category::model()->findByPk($id);
+			if(!$category) break;
+			$categories[]=$category->id;
+			$id = $category->root;
+		} while ($category->root);
+		return $categories;
 	}
 
 	/**

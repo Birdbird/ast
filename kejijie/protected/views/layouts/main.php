@@ -32,7 +32,7 @@ $(function(){
 				array('label'=>'项目成果', 'url'=>array('/post/category','id'=>5)),
 				array('label'=>'企业风采', 'url'=>array('/site/require')),
 				array('label'=>'专家教授海门行', 'url'=>array('/site/professor')),
-				array('label'=>'下载专区', 'url'=>array('/site/result')),
+				array('label'=>'下载专区', 'url'=>array('/post/category','id'=>8)),
 				array('label'=>'在线视频', 'url'=>array('')),
 				),
 				)); ?>

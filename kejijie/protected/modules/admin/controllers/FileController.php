@@ -83,6 +83,19 @@ class FileController extends CController
 		echo '照片缩略图：'.CHtml::image(Yii::app()->baseUrl.'/upload/touxiang/'.$newfilename)
 			.CHtml::hiddenField('Professor[img]',$newfilename);
 	}
+
+	public function actionCompanyImg()
+	{
+		$file = CUploadedFile::getInstanceByName('Filedata');
+		if(!$file)throw new CHttpException(400,'no file uploaded');
+		$thumb=Yii::app()->phpThumb->create($file->tempName);
+		$thumb->resize(0,80);
+		$newfilename = time().mt_rand().'.jpg';
+		$thumb->save('./upload/company/'.$newfilename);
+		$file->saveAs('./upload/company_big/'.$newfilename);
+		echo '照片缩略图：'.CHtml::image(Yii::app()->baseUrl.'/upload/company/'.$newfilename)
+			.CHtml::hiddenField('Company[thumbnail]',$newfilename);
+	}
 	
 	public function actionSlide()
 	{

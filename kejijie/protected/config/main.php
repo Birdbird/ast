@@ -36,6 +36,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'loginUrl'=>array('/admin/site/login'),
 		),
 		'phpThumb'=>array(
 			'class'=>'ext.EPhpThumb.EPhpThumb',

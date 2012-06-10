@@ -5,6 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
+	array('label'=>'企业风采管理', 'url'=>array('company/admin')),
+	array('label'=>'添加企业信息', 'url'=>array('company/create')),
 	array('label'=>'公司分类管理', 'url'=>array('admin')),
 );
 ?>

@@ -1,6 +1,6 @@
 <div class="intro-detail round">
 	<div class="company-title round">
-		<h3>【专家介绍】</h3>
+		<h3>【<?php echo $prointro->name ?>】</h3>
 	</div>
 	<?php if ($prointro->img): ?>
 		<img src="<?php echo Yii::app()->baseUrl.'/upload/touxiang_big/'.$prointro->img ?>">

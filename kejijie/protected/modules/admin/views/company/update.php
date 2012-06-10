@@ -1,18 +1,17 @@
 <?php
 $this->breadcrumbs=array(
-	'Companies'=>array('index'),
-	$model->name=>array('view','id'=>$model->id),
-	'Update',
+	'企业风采管理'=>array('admin'),
+	$model->name=>array('admin','id'=>$model->id),
+	'修改',
 );
 
 $this->menu=array(
-	array('label'=>'List Company', 'url'=>array('index')),
-	array('label'=>'Create Company', 'url'=>array('create')),
-	array('label'=>'View Company', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Company', 'url'=>array('admin')),
+	array('label'=>'企业风采管理', 'url'=>array('admin')),
+	array('label'=>'添加企业信息', 'url'=>array('create')),
+	array('label'=>'公司分类管理', 'url'=>array('sort/admin')),
 );
 ?>
 
-<h1>Update Company <?php echo $model->id; ?></h1>
+<h1>修改企业信息</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

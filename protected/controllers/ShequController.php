@@ -15,7 +15,9 @@ class ShequController extends FrontController
 	
 	public function actionRongyu()
 	{
+		$hotrnews = Post::model()->find(array('condition'=>'thumbnail !=0 and category_id = 98','order'=>'id desc'));
+		$importentrnews = Post::model()->find(array('condition'=>'thumbnail !=0 and category_id = 99','order'=>'id desc'));
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/country.css');
-		$this->render('rongyu');
+		$this->render('rongyu',array('hotrnews'=>$hotrnews,'importentrnews'=>$importentrnews));
 	}
 }

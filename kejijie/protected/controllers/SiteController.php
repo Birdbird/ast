@@ -65,11 +65,12 @@ EOD;
 		$this->render('require');
 	}
 
-	public function actionCompany()
+	public function actionCompany($id)
 	{
 		$cilentScript = Yii::app()->clientScript;
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/require.css');
-		$this->render('company');
+		$company = Company::model()->findByPk($id);
+		$this->render('company',array('company'=>$company));
 	}
 	public function actionResult()
 	{
@@ -83,14 +84,33 @@ EOD;
 		$cilentScript = Yii::app()->clientScript;
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/professor.css');
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/require.css');
-		$this->render('professor');
+		$professors = Professor::model()->findAll();
+		$this->render('professor',array('professors'=>$professors));
 	}
 
-	public function actionProintro()
+	public function actionProintro($id)
 	{
 		$cilentScript = Yii::app()->clientScript;
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/professor.css');
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/require.css');
-		$this->render('prointro');
+		$prointro = Professor::model()->findByPk($id);
+		$this->render('prointro',array('prointro'=>$prointro));
+	}
+
+	public function actionComlist()
+	{
+		$cilentScript = Yii::app()->clientScript;
+		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/company.css');
+		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/require.css');
+		$sorts = Sort::model()->findAll();
+		$this->render('comlist',array('sorts'=>$sorts));
+	}
+
+	public function actionCompanys($id)
+	{
+		$cilentScript = Yii::app()->clientScript;
+		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/company.css');
+		$sort = Sort::model()->findByPk($id);
+		$this->render('companys',array('sort'=>$sort));
 	}
 }

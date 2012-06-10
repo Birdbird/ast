@@ -114,7 +114,8 @@ EOD;
 	{
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/keji.css');
 		$this->loadPrettyPhoto();
-		$album = Album::model()->findByPk('1');
+		$albumId = Album::model()->find(array('order'=>'id desc'));
+		$album = Album::model()->findByPk($albumId->id);
 		$this->render('images',array('album'=>$album));
 	}
 	

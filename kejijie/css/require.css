@@ -80,6 +80,8 @@
 	border:1px solid #CCC;
 	float: left;
 	padding:5px;
+	width:250px;
+	height:220px;
 }
 .detail {
 	overflow: hidden;

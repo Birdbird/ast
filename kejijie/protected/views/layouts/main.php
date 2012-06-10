@@ -30,7 +30,7 @@ $(function(){
 				array('label'=>'科技征文', 'url'=>array('/post/category','id'=>3)),
 				array('label'=>'企业需求', 'url'=>array('/projectPost/category')),
 				array('label'=>'项目成果', 'url'=>array('/post/category','id'=>5)),
-				array('label'=>'企业风采', 'url'=>array('/site/require')),
+				array('label'=>'企业风采', 'url'=>array('/site/comlist')),
 				array('label'=>'专家教授海门行', 'url'=>array('/site/professor')),
 				array('label'=>'下载专区', 'url'=>array('/post/category','id'=>8)),
 				array('label'=>'在线视频', 'url'=>array('')),

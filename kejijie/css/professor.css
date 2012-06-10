@@ -1,14 +1,18 @@
 .list1 {
-	width:332px;
+	width:110px;
 	margin:5px;
-	height:126px;
 	float: left;
+	padding:3px;
+	text-align:center;
 }
 .list1 img {
-	width:80px;
+	width:100px;
 	height:115px;
-	padding:5px;
 	border:1px solid #888;
+}
+.list1 span {
+	font-size:13px;
+	color:#333;
 }
 .list1 .pro-intro {
 	float: right;

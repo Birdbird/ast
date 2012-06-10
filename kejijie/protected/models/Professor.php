@@ -37,7 +37,8 @@ class Professor extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, intro, img', 'required'),
+			array('name, intro', 'required'),
+			array('img','safe'),
 			array('name', 'length', 'max'=>20),
 			array('img', 'length', 'max'=>128),
 			// The following rule is used by search().

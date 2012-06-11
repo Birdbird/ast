@@ -8,7 +8,7 @@
 		<h3>组织机构</h3>
 		<p>
 			<span>主 席：<a href="#">顾建平</a></span>
-			<span>副主席：<a href="#">姜志斌</a><a href="#">沈  飚</a>      
+			<span>副主席：<a href="#">沈  飚</a><a href="#">姜志斌</a>      
 			<span class="organization"><a href="<?php echo $this->createUrl('about',array('id'=>5))?>">常委会委员</a></span><span  class="organization"><a href="<?php echo $this->createUrl('about',array('id'=>4))?>">全委会委员</a></span>
 			<span  class="organization"><a href="<?php echo $this->createUrl('about',array('id'=>1))?>">办公室</a></span><span  class="organization"><a href="<?php echo $this->createUrl('about',array('id'=>2))?>">普及部</a></span>
 			<span  class="organization"><a href="<?php echo $this->createUrl('about',array('id'=>3))?>">学会部</a></span>

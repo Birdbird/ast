@@ -29,14 +29,16 @@
 	display: block;
 	overflow: hidden;
 	width:100%;
-	margin:5px;
+	margin-top:5px;
+	font-weight:bold;
 }
 .accordion span a {
 	float: right;
 	color: #143C46;
-	margin:5px 10px;
+	margin:5px 0;
 	min-width:44px;
 	width:77px;
+	font-weight:normal;
 }
 .accordion .organization{
 	width:46%;
@@ -45,6 +47,7 @@
 }
 .accordion span.organization a{
 	float: none;
+	font-weight:bold;
 }
 .widget h2{
 	text-align:center;

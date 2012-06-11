@@ -27,7 +27,7 @@ $(function(){
 				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'科技节介绍', 'url'=>array('/site/about')),
 				array('label'=>'活动报告', 'url'=>array('/post/category','id'=>2)),
-				array('label'=>'科技征文', 'url'=>array('/post/category','id'=>3)),
+				// array('label'=>'科技征文', 'url'=>array('/post/category','id'=>3)),
 				array('label'=>'企业需求', 'url'=>array('/projectPost/category')),
 				array('label'=>'项目成果', 'url'=>array('/post/category','id'=>5)),
 				array('label'=>'企业风采', 'url'=>array('/site/comlist')),

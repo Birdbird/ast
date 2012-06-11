@@ -33,7 +33,7 @@ $(function(){
 				array('label'=>'企业风采', 'url'=>array('/site/comlist')),
 				array('label'=>'专家教授海门行', 'url'=>array('/site/professor')),
 				array('label'=>'下载专区', 'url'=>array('/post/category','id'=>8)),
-				array('label'=>'在线视频', 'url'=>array('')),
+				array('label'=>'在线视频', 'url'=>array('/site/video')),
 				),
 				)); ?>
 	  		</div>

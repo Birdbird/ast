@@ -114,4 +114,22 @@ EOD;
 		$sort = Sort::model()->findByPk($id);
 		$this->render('companys',array('sort'=>$sort));
 	}
+
+	public function actionVideo()
+	{
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/index.css');
+		$this->loadPrettyPhoto();
+			
+		$videos = Video::model()->findAll();
+		$this->render('video',array('videos'=>$videos));
+	}
+
+	protected function loadPrettyPhoto()
+	{
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/prettyPhoto.css');
+		Yii::app()->clientScript->registerScriptFile(
+			Yii::app()->baseUrl.'/js/jquery.prettyPhoto.js',CClientScript::POS_END);
+		Yii::app()->clientScript->registerScript('prettyPhoto',
+			'$("a[rel^=\'prettyPhoto\']").prettyPhoto({social_tools:""});');
+	}
 }

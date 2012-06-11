@@ -236,3 +236,20 @@ a:hover,.active a{
 .artical-footer p a {
   color: #203f5e;
 }
+.videos .video img {
+	width:150px;
+	height:120px;
+	border:1px solid #CCC;
+}
+.videos .video p {
+	font-size:13px;
+	color:#333;
+	text-align:center;
+}
+.videos ul li {
+	width:160px;
+	height:130px;
+	padding:4px;
+	float: left;
+	margin-top:5px;
+}

@@ -29,7 +29,7 @@
 	<div class="widget round">
 		<h3>科普图吧<span class="more-only"><a href="<?php echo $this->createUrl('page/images') ?>">更多>></a></span></h3>
 		<ul class="hot-click">
-			<?php foreach ($album->images as $image): ?>
+			<?php foreach ($album->images(array('limit'=>4)) as $image): ?>
 				<li><a href="<?php echo Yii::app()->baseUrl.'/upload/'.$image->image ?>" rel="prettyPhoto">
 					<img src="<?php echo Yii::app()->baseUrl.'/upload/'.$image->image ?>">
 					<p><?php echo mb_substr($image->description,0,7),array(''),array('title'=>$image->description) ?></p>

@@ -1,18 +1,21 @@
 .listcom li img {
-	height:75px;
-	width:100px;
+	height:50px;
+	width:75px;
 	border:1px solid #CCC;
 }
 .listcom li {
-	width:110px;
+	width:85px;
 	float: left;
-	margin:3px 8px;
+	margin:3px 5px;
+}
+.listcom ul {
+	margin:10px 0;
 }
 .listcom ul {
 	overflow: hidden;
 }
 .listcom li span {
-	font-size:12px;
+	font-size:14px;
 	color:#333;
 	padding:2px;
 }

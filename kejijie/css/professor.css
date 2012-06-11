@@ -1,17 +1,17 @@
 .list1 {
-	width:110px;
-	margin:5px;
+	width:90px;
+	margin:6px;
 	float: left;
 	padding:3px;
 	text-align:center;
 }
 .list1 img {
-	width:100px;
-	height:115px;
+	width:80px;
+	height:95px;
 	border:1px solid #888;
 }
 .list1 span {
-	font-size:13px;
+	font-size:14px;
 	color:#333;
 }
 .list1 .pro-intro {

@@ -21,6 +21,6 @@
 		'header'=>'',
 	    'pages' => $pagination,
 	    'nextPageLabel'=>'>',
-	    'nextPageLabel'=>'<',
+	    'prevPageLabel'=>'<',
 	)) ?>
 </div>

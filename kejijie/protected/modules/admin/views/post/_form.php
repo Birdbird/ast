@@ -42,7 +42,7 @@
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'category_id'); ?>
-		<?php //echo $form->dropDownList($model,'category_id',CHtml::listData(Category::model()->findAll(), 'id', 'name')); ?>
+		<?php echo $form->dropDownList($model,'category_id',CHtml::listData(Category::model()->findAll(), 'id', 'name')); ?>
 		<?php echo $form->hiddenField($model,'category_id') ?>
 		<?php echo $form->error($model,'category_id'); ?>
 	</div>

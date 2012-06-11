@@ -35,7 +35,7 @@
 				array('label'=>'企业需求管理', 'url'=>array('/admin/comRequire/admin')),
 				array('label'=>'企业风采管理', 'url'=>array('/admin/company/admin')),
 				array('label'=>'幻灯片管理', 'url'=>array('/admin/slide/admin')),
-				array('label'=>'滚动字幕管理', 'url'=>array('/admin/scrollText/admin')),
+				array('label'=>'滚动字幕管理', 'url'=>array('/admin/scrolltext/admin')),
 				array('label'=>'视频管理', 'url'=>array('/admin/video/admin')),
 				array('label'=>'登录', 'url'=>array('/admin/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'退出 ('.Yii::app()->user->name.')', 'url'=>array('/admin/site/logout'), 'visible'=>!Yii::app()->user->isGuest)

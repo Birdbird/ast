@@ -47,9 +47,7 @@ $(function(){
 	  			<p>科技节动态</p>
 	  		</div>
 	  		<div class="news-scoll" id="scoll">
-	  			<p><a href="#">我国国际科技合作亮点纷呈  我国国际科技合作亮点纷呈</a></p>
-	  			<p><a href="#">中国•海门首届科技节将于6月15日至22日在海门隆重举行</a></p>
-	  			<p><a href="#">海门科技节方案敲定 6月16日拉开大幕</a></p>
+	  			<?php $this->widget('Scroller') ?>
 	  		</div>
 	  	</div>
 	  	<div class="content">

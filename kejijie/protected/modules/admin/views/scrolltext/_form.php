@@ -15,6 +15,12 @@
 		<?php echo $form->error($model,'text'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'url'); ?>
+		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->error($model,'url'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? '创建' : '保存'); ?>
 	</div>

@@ -16,8 +16,10 @@ class ScrollText extends CActiveRecord
 	{
 		return array(
 			array('text', 'required'),
+			array('url','safe'),
 			array('text', 'length', 'max'=>64),
-			array('id, text', 'safe', 'on'=>'search'),
+			array('url', 'length', 'max'=>128),
+			array('id, text,url', 'safe', 'on'=>'search'),
 		);
 	}
 	
@@ -26,6 +28,7 @@ class ScrollText extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'text' => '内容',
+			'url' => '链接',
 		);
 	}
 	

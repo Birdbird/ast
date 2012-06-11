@@ -246,7 +246,7 @@ a:hover,.active a{
 	color:#333;
 	text-align:center;
 }
-.videos ul li {
+.videos .video li {
 	width:160px;
 	height:130px;
 	padding:4px;

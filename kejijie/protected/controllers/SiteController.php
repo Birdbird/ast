@@ -85,8 +85,15 @@ EOD;
 		$cilentScript = Yii::app()->clientScript;
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/professor.css');
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/require.css');
+		$criteria = new CDbCriteria(array(
+			'order'=>'id desc',
+		));
+		$count=ComRequire::model()->count($criteria);
+		$pagination=new CPagination($count);
+		$pagination->pageSize=42;
+		$pagination->applyLimit($criteria);
 		$professors = Professor::model()->findAll();
-		$this->render('professor',array('professors'=>$professors));
+		$this->render('professor',array('professors'=>$professors,'pagination'=>$pagination));
 	}
 
 	public function actionProintro($id)
@@ -102,7 +109,7 @@ EOD;
 	{
 		$cilentScript = Yii::app()->clientScript;
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/company.css');
-		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/require.css');
+		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/require.css');	
 		$sorts = Sort::model()->findAll();
 		$this->render('comlist',array('sorts'=>$sorts));
 	}
@@ -111,8 +118,15 @@ EOD;
 	{
 		$cilentScript = Yii::app()->clientScript;
 		$cilentScript->registerCssFile(Yii::app()->baseUrl.'/css/company.css');
+		$criteria = new CDbCriteria(array(
+			'order'=>'id desc',
+		));
+		$count=ComRequire::model()->count($criteria);
+		$pagination=new CPagination($count);
+		$pagination->pageSize=42;
+		$pagination->applyLimit($criteria);
 		$sort = Sort::model()->findByPk($id);
-		$this->render('companys',array('sort'=>$sort));
+		$this->render('companys',array('sort'=>$sort,'pagination'=>$pagination));
 	}
 
 	public function actionVideo()

@@ -15,3 +15,11 @@
 		</div>
 	<?php endforeach ?>
 </div>
+<div class="fenye">
+	<?php $this->widget('CLinkPager', array(
+		'header'=>'',
+	    'pages' => $pagination,
+	    'nextPageLabel'=>'>',
+	    'nextPageLabel'=>'<',
+	)) ?>
+</div>

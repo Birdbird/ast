@@ -12,13 +12,13 @@
 <div class="span4">
 	<div class="widget widget-notice">
 		<h3>要闻快递<span class="more-only"><?php echo CHtml::link('更多>>',array('post/category','id'=>90)) ?></span></h3>
-			<?php $this->widget('NewsList',array('categoryID'=>90,'lines'=>9,'length'=>20)) ?>
+			<?php $this->widget('NewsList',array('categoryID'=>90,'lines'=>9,'length'=>18)) ?>
 	</div>
 </div>
 <div class="span4">
 	<div class="widget widget-notice">
 		<h3>最新公告<span class="more-only"><?php echo CHtml::link('更多>>',array('post/category','id'=>91)) ?></span></h3>
-		<?php $this->widget('NewsList',array('categoryID'=>91,'lines'=>14,'length'=>20)) ?>
+		<?php $this->widget('NewsList',array('categoryID'=>91,'lines'=>14,'length'=>18)) ?>
 	</div>
 </div>
 </div>

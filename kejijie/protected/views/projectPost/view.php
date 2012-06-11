@@ -31,16 +31,16 @@
 			<td class="left">难题（项目需求）名称</td><td><?php echo $post->require ?></td>
 		</tr>
 		<tr>
-			<td class="left">内容说明</td><td><?php echo $post->content ?></td>
+			<td class="left">内容说明</td><td><?php echo nl2br($post->content)  ?></td>
 		</tr>
 		<tr>
-			<td class="left">主要技术,参数要求</td><td><?php echo $post->tec_require ?></td>
+			<td class="left">主要技术,参数要求</td><td><?php echo nl2br($post->tec_require) ?></td>
 		</tr>
 		<tr>
-			<td class="left">前景预测</td><td><?php echo $post->forecast ?></td>
+			<td class="left">前景预测</td><td><?php echo nl2br($post->forecast) ?></td>
 		</tr>
 		<tr>
-			<td class="left">企业简述</td><td><?php echo $post->com_intro ?></td>
+			<td class="left">企业简述</td><td><?php echo nl2br($post->com_intro) ?></td>
 		</tr>
 		<tr>
 			<td class="left">拟投资金</td><td><?php echo $post->amount ?></td>

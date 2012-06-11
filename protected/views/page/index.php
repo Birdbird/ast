@@ -97,7 +97,7 @@
 		<div class="span2">
 			<ul class="images">
 				<?php foreach ($haizhinews as $haizhinew): ?>
-					<li><a href="<?php echo $this->createUrl('page/view',array('id'=>$haizhinew->id)) ?>">
+					<li><a href="<?php echo $this->createUrl('post/view',array('id'=>$haizhinew->id)) ?>">
 						<img src="<?php echo Yii::app()->baseUrl ?>/upload/thumbnail/<?php echo $haizhinew->thumbnail ?>"></a>
 						<cite><?php echo CHtml::link(mb_substr($haizhinew->title,0,8), array('post/view','id'=>$haizhinew->id),array('title'=>$haizhinew->title)) ?></cite>
 					</li>

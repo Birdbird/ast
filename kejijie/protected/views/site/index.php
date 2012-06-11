@@ -27,7 +27,7 @@
 		<?php $this->widget('NewsList',array(
 			'categoryID'=>'5',
 			'length'=>18,
-			'lines'=>8,
+			'lines'=>7,
 			'showDate'=>false,
 		)); ?>
 </div>

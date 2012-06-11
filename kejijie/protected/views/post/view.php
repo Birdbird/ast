@@ -5,6 +5,14 @@
 		<?php echo $post->content ?>
 	</div>
 	<div class="artical-footer">
+		<?php if ($post->attaches): ?>
+		<p>附件</p>
+		<?php foreach ($post->attaches as $attache): ?>
+			<p>
+				<?php echo CHtml::link($attache->name, Yii::app()->baseUrl.'/attach/'.$attache->file) ?>
+			</p>
+		<?php endforeach ?>				
+		<?php endif ?>
 		<p>
 			<?php if ($post->prevPost): ?>
 				<?php echo CHtml::link('上一篇：'.$post->prevPost->title,array('post/view','id'=>$post->prevPost->id)) ?>

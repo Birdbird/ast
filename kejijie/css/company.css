@@ -1,6 +1,7 @@
 .listcom li img {
+	height:75px;
 	width:100px;
-	width:100px;
+	border:1px solid #CCC;
 }
 .listcom li {
 	width:110px;

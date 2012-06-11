@@ -37,7 +37,7 @@
 	</div>
 	<ul>
 	<?php foreach ($requires as $require): ?>
-		<li><?php echo CHtml::link(mb_substr($require->require,0,18), array('projectPost/view','id'=>$require->id),array('title'=>'['.$require->name.']'.$require->require)) ?></li>
+		<li><?php echo CHtml::link(mb_substr($require->require,0,20), array('projectPost/view','id'=>$require->id),array('title'=>'['.$require->name.']'.$require->require)) ?></li>
 	<?php endforeach ?>
 	</ul>
 </div>

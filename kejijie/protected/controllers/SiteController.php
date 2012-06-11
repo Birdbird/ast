@@ -33,7 +33,8 @@ class SiteController extends Controller
 		$('#foo0').carouFredSel({scroll:{'pauseOnHover': true,items:1},items:5});
 EOD;
 		$cilentScript->registerScript('index',$script);
-		$this->render('index');
+		$requires = ComRequire::model()->findAll(array('order'=>'id desc'));
+		$this->render('index',array('requires'=>$requires));
 	}
 
 	/**

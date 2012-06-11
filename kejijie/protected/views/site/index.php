@@ -33,12 +33,11 @@
 </div>
 <div class="news1">
 	<div class="name">
-		<h3>科技征文<span><?php echo CHtml::link('更多>>',array('post/category','id'=>3)) ?></span></h3>
+		<h3>企业需求<span><?php echo CHtml::link('更多>>',array('projectPost/category')) ?></span></h3>
 	</div>
-	<?php $this->widget('NewsList',array(
-			'categoryID'=>'3',
-			'length'=>18,
-			'lines'=>8,
-			'showDate'=>false,
-		)); ?>
+	<ul>
+	<?php foreach ($requires as $require): ?>
+		<li><?php echo CHtml::link(mb_substr($require->require,0,18), array('projectPost/view','id'=>$require->id),array('title'=>'['.$require->name.']'.$require->require)) ?></li>
+	<?php endforeach ?>
+	</ul>
 </div>

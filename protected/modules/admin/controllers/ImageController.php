@@ -9,6 +9,26 @@ class ImageController extends Controller
 		array('label'=>'添加相册', 'url'=>array('image/create')),
 	);
 	
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+		);
+	}
+
+	public function accessRules()
+	{
+		return array(
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('create','update','index','view','admin','delete','deleteimage','updateImagesInfo'),
+				'users'=>array('@'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+	}
+	
 	public function actionAdmin()
 	{
 		$model=new Album('search');

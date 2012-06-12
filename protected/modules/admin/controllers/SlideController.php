@@ -9,6 +9,26 @@ class SlideController extends Controller
 		array('label'=>'添加幻灯片相册', 'url'=>array('slide/create')),
 	);
 	
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+		);
+	}
+
+	public function accessRules()
+	{
+		return array(
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('create','update','index','view','admin','delete','upload','deleteimage','updateImagesInfo'),
+				'users'=>array('@'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+	}
+	
 	public function actionUpload()
 	{
 		$this->render('upload');
@@ -102,23 +122,4 @@ class SlideController extends Controller
 		return $model;
 	}
 	
-	public function filters()
-	{
-		return array(
-			//'accessControl', // perform access control for CRUD operations
-		);
-	}
-	
-	public function accessRules()
-	{
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','upload'),
-				'users'=>array('@'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
-	}
 }

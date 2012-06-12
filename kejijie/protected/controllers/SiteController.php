@@ -34,7 +34,15 @@ class SiteController extends Controller
 EOD;
 		$cilentScript->registerScript('index',$script);
 		$requires = ComRequire::model()->findAll(array('order'=>'id desc','limit'=>7));
-		$this->render('index',array('requires'=>$requires));
+		$latest = Post::model()->find(array(
+			'condition'=>'category_id = 2 or category_id = 4',
+			'order'=>'id desc',
+		));
+		$videos = Video::model()->findAll(array(
+			'limit'=>8,
+			'order'=>'id desc',
+		));
+		$this->render('index',array('requires'=>$requires,'latest'=>$latest,'videos'=>$videos));
 	}
 
 	/**

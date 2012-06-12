@@ -1,5 +1,5 @@
-<div class="intro-detail round">
-	<div class="company-title round">
+<div class="intro-detail">
+	<div class="company-title">
 		<h3>【<?php echo $prointro->name ?>】</h3>
 	</div>
 	<?php if ($prointro->img): ?>

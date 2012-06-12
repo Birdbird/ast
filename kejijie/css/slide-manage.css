@@ -1,0 +1,19 @@
+table.slide-images td {
+	border:1px solid #ddd;
+}
+
+td.slide-image img {
+	width:120px;
+}
+
+td.slide-image {
+	width:120px;
+}
+
+td.actions {
+	width:60px;
+}
+
+.slide-images input {
+	width:400px;
+}

@@ -32,7 +32,7 @@
 			<?php foreach ($album->images(array('limit'=>4)) as $image): ?>
 				<li><a href="<?php echo Yii::app()->baseUrl.'/upload/'.$image->image ?>" rel="prettyPhoto">
 					<img src="<?php echo Yii::app()->baseUrl.'/upload/'.$image->image ?>">
-					<p><?php echo mb_substr($image->description,0,7),array(''),array('title'=>$image->description) ?></p>
+					<p><?php echo mb_substr($image->description,0,7) ?></p>
 				</a></li>
 			<?php endforeach ?>
 		</ul>

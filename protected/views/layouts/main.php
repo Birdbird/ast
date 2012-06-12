@@ -7,7 +7,7 @@
 	<meta name="description" content=" ">
 
 	<!--[if lt IE 7]>
-			<link rel="stylesheet" type="text/css" href="css/ie6.css" />
+			<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl ?>/css/ie6.css" />
 		<![endif]-->
 	<!-- <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"> </script> -->
 	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ?>/js/ie6-patch.js"> </script>
@@ -43,13 +43,12 @@
 	<?php if ($this->title): ?>
 	<h2><?php echo $this->title ?></h2>
 	<?php endif ?>
-	<div class="row">
-	<div class="span12">
 	<?php
 	if(count($this->breadcrumbs))
 		$this->widget('zii.widgets.CBreadcrumbs', array('links'=>$this->breadcrumbs));
 	?>
-	</div>
+	<div class="row">
+
 	<?php echo $content; ?>
 	</div>
 </div>

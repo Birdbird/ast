@@ -85,6 +85,10 @@
 	width: 458px;
 }
 
+.span4 {
+	width: 294px;
+}
+
 .span9 {
 	width:699px;
 }
@@ -146,4 +150,10 @@
 
 #main-nav li a {
 	padding:10px 3px;
+}
+
+.little-titles {
+margin-bottom: 5px;
+margin-left: 3px;
+margin-right: 1px;
 }

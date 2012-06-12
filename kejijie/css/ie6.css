@@ -1,0 +1,36 @@
+.name h3 span {
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+
+.name h3 {
+	position:relative;
+}
+.listcom ul {
+	width:675px;
+}
+
+#right {
+	width:676px;
+}
+#left .menu li {
+	line-height:0;
+}
+.content-list li span {
+	position:absolute;
+	right:0;
+	top:2px;
+}
+.content-list li {
+position:relative;
+}
+#footer {
+	width:940px;
+}
+.intro-detail img {
+	margin-right:10px;
+}
+.news1 {
+	width:323px;
+}

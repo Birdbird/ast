@@ -34,13 +34,14 @@
 .intro-detail img {
 	width:222px;
 	height:277px;
-	border:1px solid #888;
+	border:1px solid #ccc;
 	padding:5px;
 	margin-top:5px;
+	margin-left:5px;
+	float:left;
 }
 .introduction {
-	width:418px;
-	float: right;
+	overflow:hidden;
 	padding:5px 10px;
 }
 .introduction p {

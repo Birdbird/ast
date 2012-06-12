@@ -11,6 +11,7 @@ class AdminModule extends CWebModule
 		
 		$this->layoutPath = Yii::getPathOfAlias('admin.views.layouts');
 		$this->layout = '/layouts/column1';
+		$this->defaultController = 'post';
 		$baseUrl = Yii::app()->createAbsoluteUrl('/');
 		Yii::app()->clientScript->registerScript('baseUrl',"var baseUrl = '{$baseUrl}';",CClientScript::POS_HEAD);
 	}

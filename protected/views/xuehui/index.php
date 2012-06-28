@@ -13,6 +13,11 @@
 				<span><?php echo date('Y-m-d',$xuehuiPost->create_time)?></span></li>
 			<?php endforeach ?>
 		</ul>
-		<p class="list-foot"><a href="#">[首页]</a><a href="#">上一页</a>[1]<a href="">下一页</a><a href="">[末尾]</a></p>
+		<?php $this->widget('CLinkPager', array(
+				'header'=>'',
+		    'pages' => $pagination,
+		    'nextPageLabel'=>'>',
+	    	'prevPageLabel'=>'<',
+		)) ?>
 	</div>
 </div>

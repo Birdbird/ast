@@ -10,8 +10,17 @@ class XuehuiController extends FrontController
 	public function actionIndex()
 	{
 		$xuehuis = Xuehui::model()->findAll();
-		$xuehuiPosts = XuehuiPost::model()->findAll();
-		$this->render('index',array('xuehuis'=>$xuehuis,'xuehuiPosts'=>$xuehuiPosts));
+		$criteria = new CDbCriteria(array(
+			// 'condition'=>'category_id=:category_id',
+			// 'params'=>array(':category_id'=>$id),
+			'order'=>'id desc',
+		));
+		$count=XuehuiPost::model()->count($criteria);
+		$pagination=new CPagination($count);
+		$pagination->pageSize=20;
+		$pagination->applyLimit($criteria);
+		$xuehuiPosts = XuehuiPost::model()->findAll($criteria);
+		$this->render('index',array('xuehuis'=>$xuehuis,'xuehuiPosts'=>$xuehuiPosts,'pagination'=>$pagination));
 	}
 
 	public function actionPost($id)

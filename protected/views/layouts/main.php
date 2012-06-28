@@ -29,7 +29,7 @@
 			<img src="<?php echo Yii::app()->baseUrl ?>/image/hb1.jpg"/>
 			<img src="<?php echo Yii::app()->baseUrl ?>/image/hb2.jpg"/>
 		</div> -->
-		<embed width="640" height="278" align="left" type="application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="sameDomain" quality="high" src="<?php echo Yii::app()->baseUrl ?>/image/slide.swf"></embed>
+		<embed width="640" height="274" align="left" type="application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="sameDomain" quality="high" src="<?php echo Yii::app()->baseUrl ?>/image/slide.swf"></embed>
 		<!-- <a id="logo" href="<?php echo Yii::app()->createAbsoluteUrl('/') ?>"><span>海门市</span>公众与科学网</a> -->
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'id'=>'main-nav',

@@ -382,7 +382,7 @@ h2 small {
 }
 h3 {
   font-size: 18px;
-  line-height: 27px;
+  line-height: 25px;
 }
 h3 small {
   font-size: 14px;
@@ -875,13 +875,15 @@ body {
   /*border: 1px solid #9DB1C7;*/
   /*#gradient .vertical(#F4FAFB,#d5ebf1);*/
 
-  background: #F4FAFB;
+  /*background: #F4FAFB;*/
+  background:#4580CC;
 }
 #main-nav li a {
   margin: 0;
   padding: 10px 6px;
   font-size: 14px;
-  color: #404750;
+  /*color: #404750;*/
+  color:white;
 }
 #main-nav li a:hover {
   background: none;
@@ -890,7 +892,8 @@ body {
   /*			background:#f0f8f9;*/
 
   background: none;
-  color: #333;
+  /*color: #333;*/
+  color:#27436A;
   font-weight: bold;
 }
 #slideshow {
@@ -915,7 +918,7 @@ body {
 }
 .widget h3 {
   font-weight: normal;
-  color: #40adcd;
+  color: #284169;
   overflow: hidden;
 }
 .widget ul {
@@ -976,8 +979,9 @@ body {
 .widget-notice h3 {
   color: #A24825;
   background: #f6f6f6;
-  padding: 3px;
+  padding-left:25px;
   font-size: 18px;
+  background: url(../img/titlebg01.jpg) left bottom no-repeat;
 }
 .widget-notice ul li {
   padding-left: 7px;
@@ -991,9 +995,9 @@ body {
 }
 .widget-side h3 {
   color: #2C506F;
-  padding-bottom: 5px;
+  padding-left:25px;
   margin-bottom: 3px;
-  background: url(../img/diag-pattern.png) left bottom repeat-x;
+  background: url(../img/titlebg01.jpg) left bottom no-repeat;
 }
 #footer {
   padding: 10px 0;
@@ -1016,11 +1020,12 @@ body {
   height:60px;
   margin:5px;
 }
-.pic-detatil h3{
+.widget-side .right-list .pic-detatil h3{
   background-image: none;
   font-size:13px;
   padding-bottom:0;
   line-height:15px;
+  padding-left:0;
 }
 .pic-detatil p{
   font-size:10px;
@@ -1039,6 +1044,11 @@ body {
 }
 .widget2{
   height:262px;
+}
+.widget2 h3{
+  background: url(../img/titlebg04.gif) left bottom no-repeat;
+  padding-left:15px;
+  margin-bottom:5px;
 }
 .pic-list img {
   width:120px;
@@ -1204,6 +1214,7 @@ border: 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  /*border:1px solid #497487;*/
 }
 #main-nav li a:hover{
   text-decoration:none;
@@ -1304,15 +1315,18 @@ border: 0;
   width:100px;
   z-index:1;
   margin-left:0;
-  background-color:#F4FAFB;
+  /*background-color:#F4FAFB;*/
+  background-color:#EEE;
   display: none;
-  border:1px solid #C6DAED;
 }
 .sub li {
   list-style:none;
 	display:block;
   text-align:center;
   line-height:25px;
+}
+#main-nav .sub li a {
+  color:#888;
 }
 
 #main-nav>li {
@@ -1322,8 +1336,11 @@ border: 0;
 /*#main-nav>li:hover .sub {
   display: block;
 }*/
-#main-nav>li:hover, .sub>li:hover {
-  background-color:#E4EAEB;
+#main-nav>li:hover {
+  background-color:#27436A;
+}
+#main-nav .sub li a:hover {
+  color:#333;
 }
 
 .xuehui-left ul li a {

@@ -16,6 +16,8 @@
 		<?php $this->widget('CLinkPager', array(
 				'header'=>'',
 		    'pages' => $pagination,
+		    'nextPageLabel'=>'>',
+	    	'prevPageLabel'=>'<',
 		)) ?>
 	</div>
 </div>

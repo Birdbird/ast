@@ -1,6 +1,6 @@
 <?php
 
-class ProjectPostController extends FrontController
+class ProjectPostController extends Controller
 {
 	public function actionView($id)
 	{

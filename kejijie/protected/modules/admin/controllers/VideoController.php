@@ -8,6 +8,26 @@ class VideoController extends Controller
 		array('label'=>'添加视频', 'url'=>array('/admin/video/create')),
 	);
 	
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+		);
+	}
+
+	public function accessRules()
+	{
+		return array(
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('create','update','index','view','admin','delete'),
+				'users'=>array('@'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+	}
+	
 	public $defaultAction = 'admin';
 	
 	public function actionCreate()

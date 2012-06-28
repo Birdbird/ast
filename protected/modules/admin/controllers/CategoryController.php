@@ -162,15 +162,6 @@ class CategoryController extends Controller
 		));
 	}
 	
-	public function actionTest()
-	{
-		$categories = array();
-		foreach (Category::family(345) as $category) {
-			$categories[]=$category->id;
-		}
-		print_r($categories);
-	}
-	
 	public function actionList()
 	{
 		$id = Yii::app()->request->getParam('id',0);

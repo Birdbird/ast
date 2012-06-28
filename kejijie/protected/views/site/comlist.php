@@ -2,7 +2,8 @@
 	<?php if (count($sort->companies)): ?>
 		<div class="listcom">
 			<div class="company-title comlist">    
-				<h3><?php echo $sort->name ?><span><?php echo CHtml::link('更多>>',array('site/companys','id'=>$sort->id)) ?></span></h3>
+				<h3><?php echo $sort->name ?></h3>
+				<span><?php echo CHtml::link('更多>>',array('site/companys','id'=>$sort->id)) ?></span>
 			</div>
 			<ul>
 				<?php foreach ($sort->companies(array('limit'=>7)) as $company): ?>

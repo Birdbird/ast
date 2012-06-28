@@ -1,5 +1,5 @@
 <div class="require">
-	<div class="company-title round">
+	<div class="company-title">
 		<h3><?php echo $category->name ?></h3>
 	</div>
 </div>
@@ -18,8 +18,12 @@
 		</li>
 		<?php endforeach ?>
 	</ul>
-	<?php $this->widget('CLinkPager', array(
+	</div>
+	<div class="fenye">
+		<?php $this->widget('CLinkPager', array(
 			'header'=>'',
-	    'pages' => $pagination,
-	)) ?>
-</div>
+		    'pages' => $pagination,
+		    'nextPageLabel'=>'>',
+		    'prevPageLabel'=>'<',
+		)) ?>
+	</div>
